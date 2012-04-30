@@ -1,7 +1,7 @@
-# Marlboromoo's vimrc #
+# Marlboromoo's vimrc
 Personal settings/plugins for vim/gvim.
-dep
-## Install ##
+
+## Install
 ```
 chmod +x ./init_vundle.sh
 vim
@@ -10,9 +10,10 @@ in vim's command line type **BundleInstall**
 ```
 :BundleInstall
 ```
-## Plugins ##
+
+## Plugins
 edit me.
 
-## Reference ## 
+## Reference
 [vundle](https://github.com/gmarik/vundle/blob/master/README.md)
 

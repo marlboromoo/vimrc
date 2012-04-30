@@ -71,6 +71,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tmhedberg/SimpylFold'
 Bundle 'indentpython.vim'
+Bundle 'hallison/vim-markdown'
 
 " >>> themes
 Bundle 'molok/vim-vombato-colorscheme'

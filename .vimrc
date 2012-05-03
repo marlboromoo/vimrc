@@ -17,6 +17,7 @@ set novisualbell
 set ruler
 set gfn=terminus\ Regular\ 11
 syntax on
+set pastetoggle=<F3>
 
 "=========================================================================================
 " vim other settings
@@ -26,9 +27,8 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
 " >>> debuger
-map <buffer> <S-p> :w<CR>:!clear;/usr/bin/env php % <CR>
+"map <buffer> <S-p> :w<CR>:!clear;/usr/bin/env php % <CR>
 map <buffer> <S-y> :w<CR>:!clear;/usr/bin/env python % <CR>
-map <buffer> <S-s> :w<CR>:!clear;/usr/bin/env bash % <CR>
 
 " >>> python pep8
 set shiftwidth=4
@@ -38,9 +38,6 @@ set tabstop=8
 set smarttab
 set expandtab
 set fileformat=unix
-highlight BadWhitespace ctermbg=red guibg=red
-au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 "=========================================================================================
 " vundle: the plug-in manager for Vim, https://github.com/gmarik/vundle
@@ -72,6 +69,8 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tmhedberg/SimpylFold'
 Bundle 'indentpython.vim'
 Bundle 'hallison/vim-markdown'
+Bundle 'tpope/vim-surround'
+Bundle 'scrooloose/syntastic'
 
 " >>> themes
 Bundle 'molok/vim-vombato-colorscheme'
@@ -107,7 +106,12 @@ map <C-t> :TagbarToggle<cr>
 "map <C-t> :TagbarToggle<cr>
 "
 "=========================================================================================
-" NERDTree: NERDTree and tabs together in Vim, https://github.com/jistr/vim-nerdtree-tabs
+" vim-nerdtree-tabs: NERDTree and tabs together, https://github.com/jistr/vim-nerdtree-tabs
 "=========================================================================================
 map <C-n> :NERDTreeTabsToggle<cr>
-"
+
+"=========================================================================================
+" syntastic: Syntax checking hacks for vim, https://github.com/scrooloose/syntastic
+"=========================================================================================
+map <S-s> :SyntasticCheck<CR>
+let g:syntastic_auto_loc_list = 1

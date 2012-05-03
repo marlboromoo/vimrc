@@ -1,7 +1,7 @@
 #!/bin/bash
 GITHUB_URL='https://github.com'
 BASE_REPO=$GITHUB_URL'/vim-scripts'
-README_BASE="README.markdown"
+README_BASE="README.draft"
 README="README.md"
 
 function get_plugins_from_vimrc(){

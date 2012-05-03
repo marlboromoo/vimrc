@@ -3,7 +3,10 @@ if [[ ! -z "$1" ]]; then
     ./make_doc.sh
     git add .
     git commit -m "$1"
-    git push -u origin master --force
+    read -p 'Push to GitHub? (y/n)' ANSWER
+    if [[ "$ANSWER" == 'y' ]]; then
+        git push -u origin master --force
+    fi
 else
-    echo 'need a comment!'
+    echo 'Need a comment!'
 fi

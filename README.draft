@@ -3,10 +3,17 @@ Personal settings/plugins for vim/gvim.
 
 ## Install
 ```
-chmod +x ./init_vundle.sh
-vim
+cd ~/
+git clone https://marlboromoo@github.com/marlboromoo/vimrc.git
+FILES='.vim .vimrc .gvimrc'
+for file in FILES
+do
+    mv ~/$file{,.bak} 2>/dev/null
+    ln -s ./vimrc/$file ./
+done
+bash ./vimrc/init_vundle.sh
 ```
-in vim's command line type **BundleInstall**
+type **BundleInstall** in vim's command line 
 ```
 :BundleInstall
 ```

@@ -16,7 +16,10 @@ function generate_markdown() {
             URL=$BASE_REPO'/'$1
             PLUGIN=$1
         fi
-        echo '* ['$PLUGIN']''('$URL')'
+    #DESC=$(curl -s $URL | grep 'og:description' | grep -o 'content=".*"' | sed -e 's/content=//g' -e 's/^"//g' -e 's/"$//g')
+    DESC=$(curl -s $URL | grep 'repo_description' | grep -o 'value=".*" placeholder' \
+        | sed 's/value="//g' | sed 's/" placeholder//g')
+    echo '* ['$PLUGIN']''('$URL'): '$DESC
 }
 
 function generate_md() {

@@ -1,2 +1,9 @@
 #!/bin/bash
-git push -u origin master --force
+if [[ ! -z "$1" ]]; then
+    ./make_doc.sh
+    git add .
+    git commit -m "$1"
+    git push -u origin master --force
+else
+    echo 'need a comment!'
+fi

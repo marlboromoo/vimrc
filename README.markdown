@@ -12,8 +12,3 @@ in vim's command line type **BundleInstall**
 ```
 
 ## Plugins
-edit me.
-
-## Reference
-[vundle](https://github.com/gmarik/vundle/blob/master/README.md)
-

@@ -18,6 +18,7 @@ set ruler
 set gfn=terminus\ Regular\ 11
 syntax on
 set pastetoggle=<F3>
+"let mapleader = ","
 
 "=========================================================================================
 " vim other settings
@@ -65,18 +66,22 @@ Bundle 'garbas/vim-snipmate'
 "Bundle 'fholgado/minibufexpl.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/vim-statline'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tmhedberg/SimpylFold'
 Bundle 'indentpython.vim'
 Bundle 'hallison/vim-markdown'
 Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-repeat'
+"Bundle 'Lokaltog/vim-powerline'
+Bundle 'jiangmiao/auto-pairs'
 
 " >>> themes
 Bundle 'molok/vim-vombato-colorscheme'
 Bundle 'tomasr/molokai'
-Bundle 'github-theme'
-Bundle 'darkspectrum'
+Bundle 'Wombat'
 
 " >>> other settings
 filetype plugin indent on " required!
@@ -85,9 +90,8 @@ filetype plugin indent on " required!
 "" vim color settings, set after bundle load
 "=========================================================================================
 "colorscheme vombato
-"colorscheme github
-"colorscheme molokai
-colorscheme darkspectrum
+colorscheme molokai
+"colorscheme wombat
 
 "=========================================================================================
 " minibufexpl: Elegant buffer explorer, https://github.com/fholgado/minibufexpl.vim

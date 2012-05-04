@@ -7,13 +7,16 @@
 * [vim-snipmate](https://github.com/garbas/vim-snipmate): snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim.
 * [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by class etc.
 * [nerdtree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim.
+* [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
+* [nerdcommenter](https://github.com/scrooloose/nerdcommenter): Vim plugin for intensely orgasmic commenting
+* [vim-statline](https://github.com/scrooloose/vim-statline): Add useful informations to Vim statusline
 * [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs): NERDTree and tabs together in Vim, painlessly
 * [SimpylFold](https://github.com/tmhedberg/SimpylFold): No-BS Python code folding for Vim
 * [indentpython.vim](https://github.com/vim-scripts/indentpython.vim): An alternative indentation script for python
 * [vim-markdown](https://github.com/hallison/vim-markdown): Markdown syntax highlight for Vim editor with snippets support
 * [vim-surround](https://github.com/tpope/vim-surround): surround.vim: quoting/parenthesizing made simple
-* [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
+* [vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim: enable repeating supported plugin maps with &quot;.&quot;
+* [auto-pairs](https://github.com/jiangmiao/auto-pairs): Vim plugin, insert or delete brackets, parens, quotes in pair
 * [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim
-* [github-theme](https://github.com/vim-scripts/github-theme): A gvim colorscheme based on github's syntax highlighting
-* [darkspectrum](https://github.com/vim-scripts/darkspectrum): a gvim color scheme based on the oblivion color scheme for gedit
+* [Wombat](https://github.com/vim-scripts/Wombat): Dark gray color scheme sharing some similarities with Desert

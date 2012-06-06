@@ -6,7 +6,7 @@ Personal settings/plugins for vim/gvim.
 cd ~/
 git clone https://marlboromoo@github.com/marlboromoo/vimrc.git
 FILES='.vim .vimrc .gvimrc'
-for file in FILES
+for file in $FILES
 do
     mv ~/$file{,.bak} 2>/dev/null
     ln -s ./vimrc/$file ./

@@ -66,7 +66,7 @@ Bundle 'garbas/vim-snipmate'
 "Bundle 'fholgado/minibufexpl.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
+""Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/vim-statline'
 Bundle 'jistr/vim-nerdtree-tabs'
@@ -117,5 +117,5 @@ map <C-n> :NERDTreeTabsToggle<cr>
 "=========================================================================================
 " syntastic: Syntax checking hacks for vim, https://github.com/scrooloose/syntastic
 "=========================================================================================
-map <S-s> :SyntasticCheck<CR>
-let g:syntastic_auto_loc_list = 1
+""map <S-s> :SyntasticCheck<CR>
+""let g:syntastic_auto_loc_list = 1

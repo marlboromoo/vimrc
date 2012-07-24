@@ -4,7 +4,7 @@ Personal settings/plugins for vim/gvim.
 ## Install
 ```
 cd ~/
-git clone https://marlboromoo@github.com/marlboromoo/vimrc.git
+git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
 FILES='.vim .vimrc .gvimrc'
 for file in $FILES
 do

@@ -15,8 +15,10 @@ bash ./vimrc/init_vundle.sh
 ```
 type **BundleInstall** in vim's command line 
 ```
+:let g:vundle_default_git_proto = 'http'
 :BundleInstall
 ```
+
 
 ## Plugins
 * [vundle](https://github.com/gmarik/vundle): Vundle, the plug-in manager for Vim

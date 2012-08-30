@@ -30,7 +30,7 @@ function get_plugin_url() {
 
 function get_plugin_desc() {
     #DESC=$(curl -s $URL | grep 'og:description' | grep -o 'content=".*"' | sed -e 's/content=//g' -e 's/^"//g' -e 's/"$//g')
-    DESC=$(curl -s $1 | grep 'repo_description' | grep -o 'value=".*" placeholder' \
+    DESC=$(curl --insecure -s $1 | grep 'repo_description' | grep -o 'value=".*" placeholder' \
         | sed 's/value="//g' | sed 's/" placeholder//g')
     echo $DESC
 }

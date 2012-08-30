@@ -5,5 +5,5 @@ colorscheme molokai
 
 "autocmd VimEnter * NERDTree
 "autocmd VimEnter * TagbarToggle
-autocmd VimEnter * IndentGuidesToggle
+"autocmd VimEnter * IndentGuidesToggle
 

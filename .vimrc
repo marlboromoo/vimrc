@@ -66,7 +66,7 @@ Bundle 'garbas/vim-snipmate'
 "Bundle 'fholgado/minibufexpl.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
-""Bundle 'scrooloose/syntastic'
+"Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/vim-statline'
 Bundle 'jistr/vim-nerdtree-tabs'
@@ -78,6 +78,11 @@ Bundle 'tpope/vim-repeat'
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'jiangmiao/auto-pairs'
 
+" >>> trac ui
+Bundle 'nsmgr8/vitra'
+Bundle 'vim-scripts/Align'
+Bundle 'vim-scripts/tracwiki'
+
 " >>> themes
 Bundle 'molok/vim-vombato-colorscheme'
 Bundle 'tomasr/molokai'
@@ -87,11 +92,21 @@ Bundle 'Wombat'
 filetype plugin indent on " required!
 
 "=========================================================================================
-"" vim color settings, set after bundle load
+" Vundle, the plug-in manager for Vim, https://github.com/gmarik/vundle
+"=========================================================================================
+let g:vundle_default_git_proto = 'http'
+
+"=========================================================================================
+" vim color settings, set after bundle load
 "=========================================================================================
 "colorscheme vombato
 colorscheme molokai
 "colorscheme wombat
+
+"=========================================================================================
+" snipmate: Plugin for using TextMate-style snippets in Vim.
+"=========================================================================================
+let g:snips_author = 'Timothy Lee' 
 
 "=========================================================================================
 " minibufexpl: Elegant buffer explorer, https://github.com/fholgado/minibufexpl.vim
@@ -119,3 +134,23 @@ map <C-n> :NERDTreeTabsToggle<cr>
 "=========================================================================================
 ""map <S-s> :SyntasticCheck<CR>
 ""let g:syntastic_auto_loc_list = 1
+
+"=========================================================================================
+" vitra : Vim client for Trac, https://github.com/nsmgr8/vitra
+"=========================================================================================
+let g:tracServerList = {}
+let g:tracServerList['PDC00'] = {
+    \ 'scheme': 'http',
+    \ 'auth': 'vimadmin:1qaz2wsx:trac.104cloud.com.tw',
+    \ 'server': 'trac.104cloud.com.tw/PDC00',
+    \ 'rpc_path': '/login/rpc',
+    \ 'auth_type': 'digest',
+    \ }
+let g:tracServerList['OpenPlatform'] = {
+    \ 'scheme': 'http',
+    \ 'auth': 'vimadmin:1qaz2wsx:trac.104cloud.com.tw',
+    \ 'server': 'trac.104cloud.com.tw/OpenPlatform',
+    \ 'rpc_path': '/login/rpc',
+    \ 'auth_type': 'digest',
+    \ }
+let g:tracDefaultServer = 'PDC00'

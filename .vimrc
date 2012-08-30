@@ -29,7 +29,7 @@ set listchars=tab:▸\ ,eol:¬
 
 " >>> debuger
 "map <buffer> <S-p> :w<CR>:!clear;/usr/bin/env php % <CR>
-map <buffer> <S-y> :w<CR>:!clear;/usr/bin/env python % <CR>
+"map <buffer> <S-y> :w<CR>:!clear;/usr/bin/env python % <CR>
 
 " >>> python pep8
 set shiftwidth=4
@@ -39,6 +39,9 @@ set tabstop=8
 set smarttab
 set expandtab
 set fileformat=unix
+
+" >>> filetype
+au BufRead,BufNewFile *.wiki set filetype=wiki
 
 "=========================================================================================
 " vundle: the plug-in manager for Vim, https://github.com/gmarik/vundle
@@ -82,6 +85,7 @@ Bundle 'jiangmiao/auto-pairs'
 Bundle 'nsmgr8/vitra'
 Bundle 'vim-scripts/Align'
 Bundle 'vim-scripts/tracwiki'
+Bundle 'vim-scripts/Trac-Wikimarkup'
 
 " >>> themes
 Bundle 'molok/vim-vombato-colorscheme'

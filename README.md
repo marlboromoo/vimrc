@@ -39,6 +39,7 @@ type **BundleInstall** in vim's command line
 * [vitra](https://github.com/nsmgr8/vitra): Vim client for Trac
 * [Align](https://github.com/vim-scripts/Align): Help folks to align text, eqns, declarations, tables, etc
 * [tracwiki](https://github.com/vim-scripts/tracwiki): Vim syntax file for Trac wiki syntax
+* [Trac-Wikimarkup](https://github.com/vim-scripts/Trac-Wikimarkup): Better syntax highlighting for Trac wikimarkup
 * [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim
 * [Wombat](https://github.com/vim-scripts/Wombat): Dark gray color scheme sharing some similarities with Desert

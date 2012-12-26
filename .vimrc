@@ -69,9 +69,10 @@ Bundle 'garbas/vim-snipmate'
 "Bundle 'fholgado/minibufexpl.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
-"Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/vim-statline'
+"Bundle 'scrooloose/vim-statline'
+Bundle 'millermedeiros/vim-statline'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tmhedberg/SimpylFold'
 Bundle 'indentpython.vim'
@@ -82,9 +83,9 @@ Bundle 'tpope/vim-repeat'
 Bundle 'jiangmiao/auto-pairs'
 
 " >>> trac ui
-Bundle 'nsmgr8/vitra'
-Bundle 'vim-scripts/Align'
-Bundle 'vim-scripts/tracwiki'
+"Bundle 'nsmgr8/vitra'
+"Bundle 'vim-scripts/Align'
+"Bundle 'vim-scripts/tracwiki'
 Bundle 'vim-scripts/Trac-Wikimarkup'
 
 " >>> themes
@@ -137,24 +138,24 @@ map <C-n> :NERDTreeTabsToggle<cr>
 " syntastic: Syntax checking hacks for vim, https://github.com/scrooloose/syntastic
 "=========================================================================================
 ""map <S-s> :SyntasticCheck<CR>
-""let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 1
 
 "=========================================================================================
 " vitra : Vim client for Trac, https://github.com/nsmgr8/vitra
 "=========================================================================================
-let g:tracServerList = {}
-let g:tracServerList['PDC00'] = {
-    \ 'scheme': 'http',
-    \ 'auth': 'vimadmin:1qaz2wsx:trac.104cloud.com.tw',
-    \ 'server': 'trac.104cloud.com.tw/PDC00',
-    \ 'rpc_path': '/login/rpc',
-    \ 'auth_type': 'digest',
-    \ }
-let g:tracServerList['OpenPlatform'] = {
-    \ 'scheme': 'http',
-    \ 'auth': 'vimadmin:1qaz2wsx:trac.104cloud.com.tw',
-    \ 'server': 'trac.104cloud.com.tw/OpenPlatform',
-    \ 'rpc_path': '/login/rpc',
-    \ 'auth_type': 'digest',
-    \ }
-let g:tracDefaultServer = 'PDC00'
+""let g:tracServerList = {}
+""let g:tracServerList['PDC00'] = {
+""    \ 'scheme': 'http',
+""    \ 'auth': 'vimadmin:1qaz2wsx:trac.104cloud.com.tw',
+""    \ 'server': 'trac.104cloud.com.tw/PDC00',
+""    \ 'rpc_path': '/login/rpc',
+""    \ 'auth_type': 'digest',
+""    \ }
+""let g:tracServerList['OpenPlatform'] = {
+""    \ 'scheme': 'http',
+""    \ 'auth': 'vimadmin:1qaz2wsx:trac.104cloud.com.tw',
+""    \ 'server': 'trac.104cloud.com.tw/OpenPlatform',
+""    \ 'rpc_path': '/login/rpc',
+""    \ 'auth_type': 'digest',
+""    \ }
+""let g:tracDefaultServer = 'PDC00'

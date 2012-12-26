@@ -61,7 +61,7 @@ call vundle#rc()
 
 " >>> bundles 
 Bundle 'gmarik/vundle' 
-Bundle 'snipmate-snippets'
+Bundle 'marlboromoo/snipmate-snippets'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'

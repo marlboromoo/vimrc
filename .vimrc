@@ -82,6 +82,7 @@ Bundle 'hallison/vim-markdown'
 Bundle 'tpope/vim-repeat'
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'jiangmiao/auto-pairs'
+Bundle 'tpope/vim-fugitive'
 
 " >>> trac ui
 "Bundle 'nsmgr8/vitra'

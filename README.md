@@ -20,21 +20,18 @@ type **BundleInstall** in vim's command line
 
 ## Plugins
 * [vundle](https://github.com/gmarik/vundle): Vundle, the plug-in manager for Vim
-* [snipmate-snippets](https://github.com/marlboromoo/snipmate-snippets): snippets for snipmate
-* [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides): A Vim plugin for visually displaying indent levels in code
+* [snipmate-snippets](https://github.com/marlboromoo/snipmate-snippets): vim-snipmate default snippets
 * [tlib_vim](https://github.com/tomtom/tlib_vim): Some utility functions for VIM
 * [vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils): vim: interpret a file by function and cache file automatically
 * [vim-snipmate](https://github.com/garbas/vim-snipmate): snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim.
 * [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by class etc.
 * [nerdtree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim.
 * [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
-* [nerdcommenter](https://github.com/scrooloose/nerdcommenter): Vim plugin for intensely orgasmic commenting
-* [vim-statline](https://github.com/millermedeiros/vim-statline): Add useful informations to Vim statusline
+* [vim-powerline](https://github.com/Lokaltog/vim-powerline): The ultimate vim statusline utility.
 * [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs): NERDTree and tabs together in Vim, painlessly
 * [SimpylFold](https://github.com/tmhedberg/SimpylFold): No-BS Python code folding for Vim
 * [indentpython.vim](https://github.com/vim-scripts/indentpython.vim): An alternative indentation script for python
 * [vim-markdown](https://github.com/hallison/vim-markdown): Markdown syntax highlight for Vim editor with snippets support
-* [vim-surround](https://github.com/tpope/vim-surround): surround.vim: quoting/parenthesizing made simple
 * [vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim: enable repeating supported plugin maps with &quot;.&quot;
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs): Vim plugin, insert or delete brackets, parens, quotes in pair
 * [Trac-Wikimarkup](https://github.com/vim-scripts/Trac-Wikimarkup): Better syntax highlighting for Trac wikimarkup

@@ -62,7 +62,7 @@ call vundle#rc()
 " >>> bundles 
 Bundle 'gmarik/vundle' 
 Bundle 'marlboromoo/snipmate-snippets'
-Bundle 'nathanaelkane/vim-indent-guides'
+"Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'garbas/vim-snipmate'
@@ -70,14 +70,15 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdcommenter'
+"Bundle 'scrooloose/nerdcommenter'
 "Bundle 'scrooloose/vim-statline'
-Bundle 'millermedeiros/vim-statline'
+"Bundle 'millermedeiros/vim-statline'
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tmhedberg/SimpylFold'
 Bundle 'indentpython.vim'
 Bundle 'hallison/vim-markdown'
-Bundle 'tpope/vim-surround'
+"Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'jiangmiao/auto-pairs'
@@ -159,3 +160,8 @@ let g:syntastic_auto_loc_list = 1
 "    \ 'auth_type': 'digest',
 "    \ }
 "let g:tracDefaultServer = 'PDC00'
+
+"=========================================================================================
+" vim-powerline : The ultimate vim statusline utility, https://github.com/Lokaltog/vim-powerline
+"=========================================================================================
+set laststatus=2

@@ -130,7 +130,7 @@ map <C-t> :TagbarToggle<cr>
 " NERDTree: A tree explorer plugin for vim, https://github.com/scrooloose/nerdtree
 "=========================================================================================
 "map <C-t> :TagbarToggle<cr>
-"
+let NERDTreeIgnore=['\.pyc$', '\.pyo$', '\.pyd$', '\~$', '\.swp$', '\.swo$']
 "=========================================================================================
 " vim-nerdtree-tabs: NERDTree and tabs together, https://github.com/jistr/vim-nerdtree-tabs
 "=========================================================================================
@@ -166,3 +166,7 @@ let g:syntastic_auto_loc_list = 1
 " vim-powerline : The ultimate vim statusline utility, https://github.com/Lokaltog/vim-powerline
 "=========================================================================================
 set laststatus=2
+
+"=========================================================================================
+" auto-pairs : Insert or delete brackets, parens, quotes in pair, https://github.com/jiangmiao/auto-pairs
+"=========================================================================================

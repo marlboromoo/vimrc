@@ -88,6 +88,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
+Bundle 'kien/rainbow_parentheses.vim'
 
 " >>> trac ui
 "Bundle 'nsmgr8/vitra'

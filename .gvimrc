@@ -2,9 +2,7 @@
 set t_Co=256
 set gfn=Terminus
 set guioptions-=L
-colorscheme molokai
 
-"autocmd VimEnter * NERDTree
-"autocmd VimEnter * TagbarToggle
+autocmd VimEnter * TagbarToggle
 "autocmd VimEnter * IndentGuidesToggle
 

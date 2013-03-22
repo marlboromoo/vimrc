@@ -25,6 +25,7 @@ set pastetoggle=<F3>
 "=========================================================================================
 "" >>> column line
 set colorcolumn=80
+highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929
 
 "" >>> list
 nmap <leader>l :set list!<CR>
@@ -109,9 +110,8 @@ let g:vundle_default_git_proto = 'http'
 "=========================================================================================
 " vim color settings, set after bundle load
 "=========================================================================================
-"colorscheme vombato
 colorscheme molokai
-"colorscheme wombat
+highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929 
 
 "=========================================================================================
 " snipmate: Plugin for using TextMate-style snippets in Vim.

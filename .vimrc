@@ -92,8 +92,8 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/DrawIt'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'SirVer/ultisnips'
-Bundle 'MarcWeber/ultisnips.git'
+Bundle 'SirVer/ultisnips'
+"Bundle 'MarcWeber/ultisnips.git'
 Bundle 'honza/vim-snippets'
 
 " >>> trac ui
@@ -182,8 +182,3 @@ set laststatus=2
 " auto-pairs : Insert or delete brackets, parens, quotes in pair, https://github.com/jiangmiao/auto-pairs
 "=========================================================================================
 
-
-"=========================================================================================
-" ultisnips: UltiSnips is a mature template library for Vim., https://github.com/marcweber/ultisnips
-"=========================================================================================
-let g:always_use_first_snippet = 1

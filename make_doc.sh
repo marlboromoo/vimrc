@@ -44,13 +44,28 @@ function gen_plugin_md() {
     echo '* ['$PLUGIN']''('$URL'): '$DESC
 }
 
+function count(){
+    i=0
+    for x in $1;
+    do
+        i=$(($i+1))
+    done
+    echo $i
+}
+
 function gen_md() {
+    echo "Please wait .."
     #. base
     cat $README_BASE > $README
     #. plugins
     echo '## Plugins' > $README_PLUGINS
+    len=$(count "$1")
+    echo "Fetch plugin info .."
+    i=0
     for plugin in $1
     do
+        i=$(($i+1))
+        echo "[$i:$len] $plugin"
         gen_plugin_md $plugin >> $README_PLUGINS
     done
     #. merge

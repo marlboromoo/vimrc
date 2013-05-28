@@ -5,15 +5,9 @@ Personal settings/plugins for vim/gvim.
 ```
 cd ~/
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
-FILES='.vim .vimrc .gvimrc'
-for file in $FILES
-do
-    mv ~/$file{,.bak} 2>/dev/null
-    ln -s ./vimrc/$file ./
-done
-bash ./vimrc/init_vundle.sh
+bash ./vimrc/init.sh
 ```
-type **BundleInstall** in vim's command line 
+type `BundleInstall` in vim's command line 
 ```
 :BundleInstall
 ```

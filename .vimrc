@@ -65,11 +65,11 @@ call vundle#rc()
 
 " >>> bundles 
 Bundle 'gmarik/vundle' 
-Bundle 'marlboromoo/snipmate-snippets'
+"Bundle 'marlboromoo/snipmate-snippets'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'garbas/vim-snipmate'
+"Bundle 'garbas/vim-snipmate'
 "Bundle 'fholgado/minibufexpl.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
@@ -82,13 +82,19 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tmhedberg/SimpylFold'
 Bundle 'indentpython.vim'
 Bundle 'hallison/vim-markdown'
-"Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'vim-scripts/DrawIt'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'SirVer/ultisnips'
+Bundle 'MarcWeber/ultisnips.git'
+Bundle 'honza/vim-snippets'
 
 " >>> trac ui
 "Bundle 'nsmgr8/vitra'
@@ -175,3 +181,9 @@ set laststatus=2
 "=========================================================================================
 " auto-pairs : Insert or delete brackets, parens, quotes in pair, https://github.com/jiangmiao/auto-pairs
 "=========================================================================================
+
+
+"=========================================================================================
+" ultisnips: UltiSnips is a mature template library for Vim., https://github.com/marcweber/ultisnips
+"=========================================================================================
+let g:always_use_first_snippet = 1

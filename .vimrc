@@ -31,10 +31,6 @@ highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
-" >>> debuger
-"map <buffer> <S-p> :w<CR>:!clear;/usr/bin/env php % <CR>
-"map <buffer> <S-y> :w<CR>:!clear;/usr/bin/env python % <CR>
-
 " >>> python pep8
 set shiftwidth=4
 set softtabstop=4
@@ -65,18 +61,13 @@ call vundle#rc()
 
 " >>> bundles 
 Bundle 'gmarik/vundle' 
-"Bundle 'marlboromoo/snipmate-snippets'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 "Bundle 'garbas/vim-snipmate'
-"Bundle 'fholgado/minibufexpl.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-"Bundle 'scrooloose/nerdcommenter'
-"Bundle 'scrooloose/vim-statline'
-"Bundle 'millermedeiros/vim-statline'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tmhedberg/SimpylFold'
@@ -84,7 +75,6 @@ Bundle 'indentpython.vim'
 Bundle 'hallison/vim-markdown'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
-"Bundle 'Lokaltog/vim-powerline'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
@@ -93,13 +83,7 @@ Bundle 'vim-scripts/DrawIt'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'SirVer/ultisnips'
-"Bundle 'MarcWeber/ultisnips.git'
 Bundle 'honza/vim-snippets'
-
-" >>> trac ui
-"Bundle 'nsmgr8/vitra'
-"Bundle 'vim-scripts/Align'
-"Bundle 'vim-scripts/tracwiki'
 Bundle 'vim-scripts/Trac-Wikimarkup'
 
 " >>> themes
@@ -124,7 +108,7 @@ highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929
 "=========================================================================================
 " snipmate: Plugin for using TextMate-style snippets in Vim.
 "=========================================================================================
-let g:snips_author = 'Timothy Lee' 
+" let g:snips_author = 'Timothy Lee' 
 
 "=========================================================================================
 " minibufexpl: Elegant buffer explorer, https://github.com/fholgado/minibufexpl.vim
@@ -152,26 +136,6 @@ map <C-n> :NERDTreeTabsToggle<cr>
 "=========================================================================================
 ""map <S-s> :SyntasticCheck<CR>
 let g:syntastic_auto_loc_list = 1
-
-"=========================================================================================
-" vitra : Vim client for Trac, https://github.com/nsmgr8/vitra
-"=========================================================================================
-"let g:tracServerList = {}
-"let g:tracServerList['PDC00'] = {
-"    \ 'scheme': 'http',
-"    \ 'auth': 'vimadmin:1qaz2wsx:trac.104cloud.com.tw',
-"    \ 'server': 'trac.104cloud.com.tw/PDC00',
-"    \ 'rpc_path': '/login/rpc',
-"    \ 'auth_type': 'digest',
-"    \ }
-"let g:tracServerList['OpenPlatform'] = {
-"    \ 'scheme': 'http',
-"    \ 'auth': 'vimadmin:1qaz2wsx:trac.104cloud.com.tw',
-"    \ 'server': 'trac.104cloud.com.tw/OpenPlatform',
-"    \ 'rpc_path': '/login/rpc',
-"    \ 'auth_type': 'digest',
-"    \ }
-"let g:tracDefaultServer = 'PDC00'
 
 "=========================================================================================
 " vim-powerline : The ultimate vim statusline utility, https://github.com/Lokaltog/vim-powerline

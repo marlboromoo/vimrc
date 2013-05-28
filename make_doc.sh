@@ -6,7 +6,8 @@ README_PLUGINS="README.plugins"
 README="README.md"
 
 function get_plugins_from_vimrc(){
-    echo $(cat ~/.vimrc | grep ^Bundle | sed "s/Bundle '//g" | sed "s/'//g")
+    echo $(cat ~/.vimrc | grep ^Bundle | sed "s/Bundle '//g" | sed "s/'//g" | \
+        sed "s/\.git$//g")
 }
 
 function get_plugin_name() {
@@ -29,9 +30,9 @@ function get_plugin_url() {
 }
 
 function get_plugin_desc() {
-    #DESC=$(curl -s $URL | grep 'og:description' | grep -o 'content=".*"' | sed -e 's/content=//g' -e 's/^"//g' -e 's/"$//g')
-    DESC=$(curl --insecure -s $1 | grep 'repo_description' | grep -o 'value=".*" placeholder' \
-        | sed 's/value="//g' | sed 's/" placeholder//g')
+    DESC=$(curl --insecure -s $1 | grep 'repo_description' | \
+        grep -o 'value=".*" placeholder' | sed 's/value="//g' | \
+        sed 's/" placeholder//g')
     echo $DESC
 }
 

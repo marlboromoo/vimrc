@@ -12,16 +12,9 @@ type `BundleInstall` in vim's command line
 :BundleInstall
 ```
 
-## Remove duplicate snippets
-```
-rm -rf ~/.vim/bundle/vim-snippets/UltiSnips/
-```
-
 ## Plugins
 * [vundle](https://github.com/gmarik/vundle): Vundle, the plug-in manager for Vim
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides): A Vim plugin for visually displaying indent levels in code
-* [tlib_vim](https://github.com/tomtom/tlib_vim): Some utility functions for VIM
-* [vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils): vim: interpret a file by function and cache file automatically
 * [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by class etc.
 * [nerdtree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim.
 * [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
@@ -39,10 +32,9 @@ rm -rf ~/.vim/bundle/vim-snippets/UltiSnips/
 * [DrawIt](https://github.com/vim-scripts/DrawIt): Ascii drawing plugin: lines, ellipses, arrows, fills, and more!
 * [jedi-vim](https://github.com/davidhalter/jedi-vim): Using the jedi autocompletion library for VIM.
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
-* [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
-* [vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets (Previsouly snipmate-snippets)
 * [Trac-Wikimarkup](https://github.com/vim-scripts/Trac-Wikimarkup): Better syntax highlighting for Trac wikimarkup
 * [javacomplete](https://github.com/vim-scripts/javacomplete): Omni Completion for JAVA
+* [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
 * [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim
 * [Wombat](https://github.com/vim-scripts/Wombat): Dark gray color scheme sharing some similarities with Desert

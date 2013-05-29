@@ -59,9 +59,6 @@ call vundle#rc()
 " >>> bundles 
 Bundle 'gmarik/vundle' 
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'tomtom/tlib_vim'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-"Bundle 'garbas/vim-snipmate'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
@@ -79,12 +76,17 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/DrawIt'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'SirVer/ultisnips'
-Bundle 'honza/vim-snippets'
 Bundle 'vim-scripts/Trac-Wikimarkup'
 Bundle 'javacomplete'
 
-" >>> themes
+" >>> bundles - snippets
+"Bundle 'tomtom/tlib_vim'                                                       
+"Bundle 'MarcWeber/vim-addon-mw-utils'                                          
+"Bundle 'garbas/vim-snipmate'                                                   
+"Bundle 'honza/vim-snippets'                                                    
+Bundle 'SirVer/ultisnips'  
+
+" >>> bundles - color scheme
 Bundle 'molok/vim-vombato-colorscheme'
 Bundle 'tomasr/molokai'
 Bundle 'Wombat'

@@ -12,8 +12,3 @@ type `BundleInstall` in vim's command line
 :BundleInstall
 ```
 
-## Remove duplicate snippets
-```
-rm -rf ~/.vim/bundle/vim-snippets/UltiSnips/
-```
-

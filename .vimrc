@@ -93,12 +93,12 @@ Bundle 'Wombat'
 filetype plugin indent on " required!
 
 "==============================================================================
-" Vundle, the plug-in manager for Vim, https://github.com/gmarik/vundle
+" Vundle
 "==============================================================================
 let g:vundle_default_git_proto = 'http'
 
 "==============================================================================
-" vim color settings, set after bundle load
+" vim color scheme settings, set after bundle load
 "==============================================================================
 colorscheme molokai
 highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929 

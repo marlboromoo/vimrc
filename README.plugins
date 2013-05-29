@@ -23,6 +23,7 @@
 * [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
 * [vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets (Previsouly snipmate-snippets)
 * [Trac-Wikimarkup](https://github.com/vim-scripts/Trac-Wikimarkup): Better syntax highlighting for Trac wikimarkup
+* [javacomplete](https://github.com/vim-scripts/javacomplete): Omni Completion for JAVA
 * [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim
 * [Wombat](https://github.com/vim-scripts/Wombat): Dark gray color scheme sharing some similarities with Desert

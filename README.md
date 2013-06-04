@@ -6,10 +6,7 @@ Personal settings/plugins for vim/gvim.
 cd ~/
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
 bash ./vimrc/init.sh
-```
-type `BundleInstall` in vim's command line 
-```
-:BundleInstall
+vim +BundleInstall +qall
 ```
 
 ## Plugins

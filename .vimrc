@@ -125,7 +125,9 @@ map <C-t> :TagbarToggle<cr>
 " NERDTree
 "==============================================================================
 "map <C-t> :TagbarToggle<cr>
-let NERDTreeIgnore=['\.pyc$', '\.pyo$', '\.pyd$', '\~$', '\.swp$', '\.swo$']
+let NERDTreeIgnore=[ 
+            \ '\.pyc$', '\.pyo$', '\.pyd$', 
+            \ '\~$', '\.swp$', '\.swo$', '\.class$']
 
 "==============================================================================
 " vim-nerdtree-tabs

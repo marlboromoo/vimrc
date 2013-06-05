@@ -1,5 +1,5 @@
 # Building Vim from source
-** This how-to come from: [YouCompleteMe] (https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source). **
+**This how-to come from: [YouCompleteMe] (https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source).**
 
 
 Compiling Vim from source is actually not that difficult. Here's what you should do:

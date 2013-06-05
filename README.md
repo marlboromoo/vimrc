@@ -1,7 +1,7 @@
 # Marlboromoo's vimrc
 Personal settings/plugins for vim/gvim.
 
-## Install
+## Installation
 ### With Vundle
 ```
 cd ~/

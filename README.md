@@ -2,12 +2,16 @@
 Personal settings/plugins for vim/gvim.
 
 ## Install
+### With Vundle
 ```
 cd ~/
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
 bash ./vimrc/init.sh
 vim +BundleInstall +qall
 ```
+### By Hand
+Please refer to the document listed below.
+* [eclim](http://eclim.org/)
 
 ## Plugins
 * [vundle](https://github.com/gmarik/vundle): Vundle, the plug-in manager for Vim

@@ -2,13 +2,14 @@
 Personal settings/plugins for vim/gvim.
 
 ## Install
+### With Vundle
 ```
 cd ~/
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
 bash ./vimrc/init.sh
 vim +BundleInstall +qall
 ```
-
-## Install eclim
-see [offical document] (http://eclim.org/install.html).
+### By Hand
+Please refer to the document listed below.
+* [eclim](http://eclim.org/)
 

@@ -82,6 +82,7 @@ Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'vim-scripts/Trac-Wikimarkup'
 "Bundle 'javacomplete'
+Bundle 'Valloric/YouCompleteMe'
 
 " >>> bundles - snippets
 "Bundle 'tomtom/tlib_vim'                                                       
@@ -165,6 +166,7 @@ au BufRead,BufNewFile *.wiki set filetype=wiki
 "==============================================================================
 " eclim
 "==============================================================================
+let g:EclimCompletionMethod = 'omnifunc'
 if has("autocmd") 
   autocmd Filetype java nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
   autocmd Filetype java nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x declarations<cr>

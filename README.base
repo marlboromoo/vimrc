@@ -8,6 +8,8 @@ cd ~/
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
 bash ./vimrc/init.sh
 vim +BundleInstall +qall
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh --clang-completer
 ```
 ### By Hand
 Please refer to the document listed below.

@@ -8,6 +8,8 @@ cd ~/
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
 bash ./vimrc/init.sh
 vim +BundleInstall +qall
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh --clang-completer
 ```
 ### By Hand
 Please refer to the document listed below.
@@ -34,7 +36,7 @@ Please refer to the document listed below.
 * [jedi-vim](https://github.com/davidhalter/jedi-vim): Using the jedi autocompletion library for VIM.
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
 * [Trac-Wikimarkup](https://github.com/vim-scripts/Trac-Wikimarkup): Better syntax highlighting for Trac wikimarkup
-* [javacomplete](https://github.com/vim-scripts/javacomplete): Omni Completion for JAVA
+* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe): A code-completion engine for Vim
 * [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
 * [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim

@@ -9,3 +9,6 @@ bash ./vimrc/init.sh
 vim +BundleInstall +qall
 ```
 
+## Install eclim
+see [offical document] (http://eclim.org/install.html).
+

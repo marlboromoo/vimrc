@@ -1,4 +1,7 @@
 *.swp
 *.swo
 .vim/bundle/
+.vim/eclim
+.vim/plugin
+./vim/
 *~

@@ -27,6 +27,10 @@ set pastetoggle=<F3>
 set colorcolumn=80
 highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929
 
+"" >>> complete
+"set completeopt=menu,preview
+set completeopt=menu,longest,menuone
+
 "" >>> list
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
@@ -77,7 +81,7 @@ Bundle 'vim-scripts/DrawIt'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'vim-scripts/Trac-Wikimarkup'
-Bundle 'javacomplete'
+"Bundle 'javacomplete'
 
 " >>> bundles - snippets
 "Bundle 'tomtom/tlib_vim'                                                       
@@ -153,7 +157,16 @@ au BufRead,BufNewFile *.wiki set filetype=wiki
 "==============================================================================
 " javacomplete
 "==============================================================================
+"if has("autocmd") 
+"  autocmd Filetype java setlocal omnifunc=javacomplete#Complete 
+"  autocmd FileType java inoremap <buffer> . .<C-X><C-O><C-P>
+"endif
+
+"==============================================================================
+" eclim
+"==============================================================================
 if has("autocmd") 
-  autocmd Filetype java setlocal omnifunc=javacomplete#Complete 
-  autocmd FileType java inoremap <buffer> . .<C-X><C-O><C-P>
+  autocmd Filetype java nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
+  autocmd Filetype java nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x declarations<cr>
+  autocmd Filetype java nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
 endif

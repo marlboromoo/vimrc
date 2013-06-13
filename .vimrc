@@ -35,6 +35,9 @@ set completeopt=menu,longest,menuone
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
+"" >>> folding
+set nofoldenable
+
 " >>> python pep8
 set shiftwidth=4
 set softtabstop=4
@@ -186,4 +189,12 @@ let g:jedi#popup_on_dot = 0
 let g:ycm_key_list_select_completion = ['<Down>']
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_cache_omnifunc = 1
+
+"==============================================================================
+" ultisnips
+"==============================================================================
+"let g:UltiSnipsExpandTrigger="<c-j>"
+"let g:UltiSnipsJumpForwardTrigger="<c-j>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
 

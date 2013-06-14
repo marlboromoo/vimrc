@@ -40,9 +40,9 @@ Compiling Vim from source is actually not that difficult. Here's what you should
   Set vim as your default editor with `update-alternatives`.
 
         sudo update-alternatives --install /usr/bin/editor editor /usr/bin/vim 1
-        update-alternatives --set editor /usr/bin/vim
+        sudo update-alternatives --set editor /usr/bin/vim
         sudo update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
-        update-alternatives --set vi /usr/bin/vim
+        sudo update-alternatives --set vi /usr/bin/vim
 
 4. Double check that you are in fact running the new Vim binary by looking at the output of `vim --version`.
 

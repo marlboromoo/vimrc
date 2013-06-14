@@ -23,6 +23,10 @@ set pastetoggle=<F3>
 "==============================================================================
 " vim other settings
 "==============================================================================
+"" >>> copy/paste, ref:http://superuser.com/questions/214715/map-shift-insert-in-vim
+map <S-Insert> <MiddleMouse>
+map! <S-Insert> <MiddleMouse>
+
 "" >>> column line
 set colorcolumn=80
 highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929

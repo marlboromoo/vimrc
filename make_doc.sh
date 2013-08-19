@@ -6,29 +6,29 @@ README_BASE="README.base"
 README_PLUGINS="README.plugins"
 README="README.md"
 
-function _get_plugins_from_vimrc(){
+function get_plugins_from_vimrc(){
     echo $(cat ~/.vimrc | grep ^Bundle | sed "s/Bundle '//g" | sed "s/'//g" | \
         sed "s/\.git$//g")
 }
 
-function get_plugins_from_vimrc(){
-    echo indentpython.vim
-}
+#function get_plugins_from_vimrc(){
+#    echo 'molok/vim-vombato-colorscheme tomasr/molokai Wombat'
+#}
 
 function get_plugin_name() {
-    PLUGIN=$(echo $1 | cut -sd '/' -f 2)
-    if [[ -z "$PLUGIN" ]]; then
-        PLUGIN=$1
+    plugin=$(echo $1 | cut -sd '/' -f 2)
+    if [[ -z "$plugin" ]]; then
+        plugin=$1
     fi
-    echo $PLUGIN
+    echo $plugin
 }
 
 function get_author_name() {
-    AUTHOR=$(echo $1 | cut -sd '/' -f 1)
-    if [[ -z "$AUTHOR" ]]; then
-        AUTHOR=$(basename $BASE_REPO)
+    author=$(echo $1 | cut -sd '/' -f 1)
+    if [[ -z "$author" ]]; then
+        author=$(basename $BASE_REPO)
     fi
-    echo $AUTHOR
+    echo $author
 }
 
 function get_plugin_url() {
@@ -38,7 +38,8 @@ function get_plugin_url() {
 function get_plugin_desc() {
     url=$GITHUB_API_BASE/$1/$2
     desc=$(curl --insecure -u $USERNAME:$PASSWORD -s $url | \
-        grep -i 'description' | cut -d ':' -f 2 | sed -e 's/"//g' -e 's/,$//g')
+        grep -i 'description' | head -n1 | cut -d ':' -f 2 | \
+        sed -e 's/"//g' -e 's/,$//g')
     echo $desc
 }
 
@@ -95,7 +96,7 @@ case $1 in
         ;;
     update)
         get_usrpwd_for_github
-        PLUGINS=$(_get_plugins_from_vimrc)
+        PLUGINS=$(get_plugins_from_vimrc)
         gen_md "$PLUGINS"
         ;;
     *)

@@ -1,6 +1,6 @@
 #!/bin/bash
 GITHUB_URL='https://github.com'
-GITHUB_API_BASE='https://api.github.com/repos'
+GITHUB_API_BASE='https://api.github.com'
 BASE_REPO=$GITHUB_URL'/vim-scripts'
 README_BASE="README.base"
 README_PLUGINS="README.plugins"
@@ -10,10 +10,6 @@ function get_plugins_from_vimrc(){
     echo $(cat ~/.vimrc | grep ^Bundle | sed "s/Bundle '//g" | sed "s/'//g" | \
         sed "s/\.git$//g")
 }
-
-#function get_plugins_from_vimrc(){
-#    echo 'molok/vim-vombato-colorscheme tomasr/molokai Wombat'
-#}
 
 function get_plugin_name() {
     plugin=$(echo $1 | cut -sd '/' -f 2)
@@ -36,7 +32,7 @@ function get_plugin_url() {
 }
 
 function get_plugin_desc() {
-    url=$GITHUB_API_BASE/$1/$2
+    url=$GITHUB_API_BASE/repos/$1/$2
     desc=$(curl --insecure -u $USERNAME:$PASSWORD -s $url | \
         grep -i 'description' | head -n1 | cut -d ':' -f 2 | \
         sed -e 's/"//g' -e 's/,$//g')
@@ -87,6 +83,16 @@ function gen_md_from_cache() {
 function get_usrpwd_for_github(){
     read -p "GITHUB Username: " USERNAME
     read -s -p "GITHUB Password: " PASSWORD
+    echo ''
+}
+
+function check_usrpwd_for_github(){
+    message=$(curl -s --insecure -u $USERNAME:$PASSWORD \
+    $GITHUB_API_BASE/rate_limit | grep -i message)
+    if [[ ! -z $message ]]; then
+        echo "Bad credentials for Github!"
+        exit 1
+    fi
 }
 
 ### main
@@ -96,6 +102,7 @@ case $1 in
         ;;
     update)
         get_usrpwd_for_github
+        check_usrpwd_for_github
         PLUGINS=$(get_plugins_from_vimrc)
         gen_md "$PLUGINS"
         ;;

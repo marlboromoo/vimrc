@@ -73,7 +73,8 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'Lokaltog/vim-powerline'
+"Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tmhedberg/SimpylFold'
 Bundle 'indentpython.vim'
@@ -152,6 +153,7 @@ map <C-n> :NERDTreeTabsToggle<cr>
 "map <S-s> :SyntasticCheck<CR>
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_python_checkers=['pyflakes']
+"let g:syntastic_python_checkers=['pylint']
 
 "==============================================================================
 " vim-powerline

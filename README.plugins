@@ -7,8 +7,8 @@
 * [vim-airline](https://github.com/bling/vim-airline): lean & mean statusline for vim that's light as air
 * [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs): NERDTree and tabs together in Vim, painlessly
 * [SimpylFold](https://github.com/tmhedberg/SimpylFold): No-BS Python code folding for Vim
-* [indentpython.vim](https://github.com/vim-scripts/indentpython.vim): 
-* [vim-markdown](https://github.com/hallison/vim-markdown): Markdown syntax highlight for Vim editor with snippets support Markdown Vim Mode Markdown Vim Mode
+* [indentpython.vim](https://github.com/vim-scripts/indentpython.vim): An alternative indentation script for python
+* [vim-markdown](https://github.com/hallison/vim-markdown): Markdown syntax highlight for Vim editor with snippets support
 * [vim-surround](https://github.com/tpope/vim-surround): surround.vim
 * [vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs): Vim plugin, insert or delete brackets, parens, quotes in pair
@@ -21,6 +21,6 @@
 * [Trac-Wikimarkup](https://github.com/vim-scripts/Trac-Wikimarkup): Better syntax highlighting for Trac wikimarkup
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe): A code-completion engine for Vim
 * [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
-* [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original Dark gray color scheme sharing some similarities with Desert Dark gray color scheme sharing some similarities with Desert
+* [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim
-* [Wombat](https://github.com/vim-scripts/Wombat): 
+* [Wombat](https://github.com/vim-scripts/Wombat): Dark gray color scheme sharing some similarities with Desert

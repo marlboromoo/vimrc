@@ -1,5 +1,6 @@
 #!/bin/bash
 GITHUB_URL='https://github.com'
+GITHUB_API_BASE='https://api.github.com/repos'
 BASE_REPO=$GITHUB_URL'/vim-scripts'
 README_BASE="README.base"
 README_PLUGINS="README.plugins"
@@ -18,6 +19,14 @@ function get_plugin_name() {
     echo $PLUGIN
 }
 
+function get_author_name() {
+    AUTHOR=$(echo $1 | cut -sd '/' -f 1)
+    if [[ -z "$AUTHOR" ]]; then
+        AUTHOR=$1
+    fi
+    echo $AUTHOR
+}
+
 function get_plugin_url() {
     PLUGIN=$(echo $1 | cut -sd '/' -f 2)
     if [[ ! -z "$PLUGIN" ]]; then
@@ -30,17 +39,17 @@ function get_plugin_url() {
 }
 
 function get_plugin_desc() {
-    DESC=$(curl --insecure -s $1 | grep 'repo_description' | \
-        grep -o 'value=".*" placeholder' | sed 's/value="//g' | \
-        sed 's/" placeholder//g')
+    url=$GITHUB_API_BASE/$1/$2
+    DESC=$(curl --insecure -s $url | grep -i 'description' | \
+        cut -d ':' -f 2 | sed -e 's/"//g' -e 's/,$//g')
     echo $DESC
 }
 
-
 function gen_plugin_md() {
     PLUGIN=$(get_plugin_name $1)
+    AUTHOR=$(get_author_name $1)
     URL=$(get_plugin_url $1)
-    DESC=$(get_plugin_desc $URL)
+    DESC=$(get_plugin_desc $AUTHOR $PLUGIN)
     echo '* ['$PLUGIN']''('$URL'): '$DESC
 }
 

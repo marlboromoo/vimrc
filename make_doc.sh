@@ -22,7 +22,7 @@ function get_plugin_name() {
 function get_author_name() {
     AUTHOR=$(echo $1 | cut -sd '/' -f 1)
     if [[ -z "$AUTHOR" ]]; then
-        AUTHOR=$1
+        AUTHOR=$(echo $BASE_REPO | cut -d '/' -f 2)
     fi
     echo $AUTHOR
 }
@@ -40,7 +40,7 @@ function get_plugin_url() {
 
 function get_plugin_desc() {
     url=$GITHUB_API_BASE/$1/$2
-    DESC=$(curl --insecure -s $url | grep -i 'description' | \
+    DESC=$(curl --insecure -u $USERNAME:$PASSWORD -s $url | grep -i 'description' | \
         cut -d ':' -f 2 | sed -e 's/"//g' -e 's/,$//g')
     echo $DESC
 }
@@ -86,12 +86,18 @@ function gen_md_from_cache() {
     cat $README_PLUGINS >> $README
 }
 
+function get_usrpwd_for_github(){
+    read -p "GITHUB Username: " USERNAME
+    read -s -p "GITHUB Password: " PASSWORD
+}
+
 ### main
 case $1 in
     cache)
         gen_md_from_cache
         ;;
     update)
+        get_usrpwd_for_github
         PLUGINS=$(get_plugins_from_vimrc)
         gen_md "$PLUGINS"
         ;;

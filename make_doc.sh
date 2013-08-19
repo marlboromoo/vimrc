@@ -6,9 +6,13 @@ README_BASE="README.base"
 README_PLUGINS="README.plugins"
 README="README.md"
 
-function get_plugins_from_vimrc(){
+function _get_plugins_from_vimrc(){
     echo $(cat ~/.vimrc | grep ^Bundle | sed "s/Bundle '//g" | sed "s/'//g" | \
         sed "s/\.git$//g")
+}
+
+function get_plugins_from_vimrc(){
+    echo indentpython.vim
 }
 
 function get_plugin_name() {
@@ -22,35 +26,28 @@ function get_plugin_name() {
 function get_author_name() {
     AUTHOR=$(echo $1 | cut -sd '/' -f 1)
     if [[ -z "$AUTHOR" ]]; then
-        AUTHOR=$(echo $BASE_REPO | cut -d '/' -f 2)
+        AUTHOR=$(basename $BASE_REPO)
     fi
     echo $AUTHOR
 }
 
 function get_plugin_url() {
-    PLUGIN=$(echo $1 | cut -sd '/' -f 2)
-    if [[ ! -z "$PLUGIN" ]]; then
-            URL=$GITHUB_URL'/'$1
-        else
-            URL=$BASE_REPO'/'$1
-            PLUGIN=$1
-    fi
-    echo $URL
+    echo "$GITHUB_URL/$1/$2"
 }
 
 function get_plugin_desc() {
     url=$GITHUB_API_BASE/$1/$2
-    DESC=$(curl --insecure -u $USERNAME:$PASSWORD -s $url | grep -i 'description' | \
-        cut -d ':' -f 2 | sed -e 's/"//g' -e 's/,$//g')
-    echo $DESC
+    desc=$(curl --insecure -u $USERNAME:$PASSWORD -s $url | \
+        grep -i 'description' | cut -d ':' -f 2 | sed -e 's/"//g' -e 's/,$//g')
+    echo $desc
 }
 
 function gen_plugin_md() {
-    PLUGIN=$(get_plugin_name $1)
-    AUTHOR=$(get_author_name $1)
-    URL=$(get_plugin_url $1)
-    DESC=$(get_plugin_desc $AUTHOR $PLUGIN)
-    echo '* ['$PLUGIN']''('$URL'): '$DESC
+    plugin=$(get_plugin_name $1)
+    author=$(get_author_name $1)
+    url=$(get_plugin_url $author $plugin)
+    desc=$(get_plugin_desc $author $plugin)
+    echo '* ['$plugin']''('$url'): '$desc
 }
 
 function count(){
@@ -98,7 +95,7 @@ case $1 in
         ;;
     update)
         get_usrpwd_for_github
-        PLUGINS=$(get_plugins_from_vimrc)
+        PLUGINS=$(_get_plugins_from_vimrc)
         gen_md "$PLUGINS"
         ;;
     *)

@@ -69,7 +69,8 @@ call vundle#rc()
 
 " >>> bundles 
 Bundle 'gmarik/vundle' 
-Bundle 'nathanaelkane/vim-indent-guides'
+"Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Yggdroot/indentLine'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
@@ -91,6 +92,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'vim-scripts/Trac-Wikimarkup'
 "Bundle 'javacomplete'
 Bundle 'Valloric/YouCompleteMe'
+"Bundle 'mhinz/vim-startify'
 
 " >>> bundles - snippets
 "Bundle 'tomtom/tlib_vim'                                                       

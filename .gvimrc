@@ -4,5 +4,5 @@ set gfn=Terminus
 set guioptions-=L
 
 "autocmd VimEnter * TagbarToggle
-autocmd VimEnter * IndentGuidesToggle
+"autocmd VimEnter * IndentGuidesToggle
 

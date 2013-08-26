@@ -94,6 +94,7 @@ Bundle 'vim-scripts/Trac-Wikimarkup'
 Bundle 'Valloric/YouCompleteMe'
 "Bundle 'mhinz/vim-startify'
 Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'terryma/vim-multiple-cursors'
 
 " >>> bundles - snippets
 "Bundle 'tomtom/tlib_vim'                                                       

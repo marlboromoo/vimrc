@@ -67,8 +67,8 @@ filetype off " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" >>> bundles 
-Bundle 'gmarik/vundle' 
+" >>> bundles
+Bundle 'gmarik/vundle'
 "Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Yggdroot/indentLine'
 Bundle 'majutsushi/tagbar'
@@ -97,11 +97,11 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'terryma/vim-multiple-cursors'
 
 " >>> bundles - snippets
-"Bundle 'tomtom/tlib_vim'                                                       
-"Bundle 'MarcWeber/vim-addon-mw-utils'                                          
-"Bundle 'garbas/vim-snipmate'                                                   
-"Bundle 'honza/vim-snippets'                                                    
-Bundle 'SirVer/ultisnips'  
+"Bundle 'tomtom/tlib_vim'
+"Bundle 'MarcWeber/vim-addon-mw-utils'
+"Bundle 'garbas/vim-snipmate'
+"Bundle 'honza/vim-snippets'
+Bundle 'SirVer/ultisnips'
 
 " >>> bundles - color scheme
 Bundle 'molok/vim-vombato-colorscheme'
@@ -120,18 +120,18 @@ let g:vundle_default_git_proto = 'http'
 " vim color scheme settings, set after bundle load
 "==============================================================================
 colorscheme molokai
-highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929 
+highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929
 
 "==============================================================================
 " snipmate
 "==============================================================================
-" let g:snips_author = 'Timothy Lee' 
+" let g:snips_author = 'Timothy Lee'
 
 "==============================================================================
 " minibufexpl
 "==============================================================================
-let g:miniBufExplMapWindowNavArrows = 1 
-let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
 
 "==============================================================================
 " tagbar
@@ -142,8 +142,8 @@ map <C-t> :TagbarToggle<cr>
 " NERDTree
 "==============================================================================
 "map <C-t> :TagbarToggle<cr>
-let NERDTreeIgnore=[ 
-            \ '\.pyc$', '\.pyo$', '\.pyd$', 
+let NERDTreeIgnore=[
+            \ '\.pyc$', '\.pyo$', '\.pyd$',
             \ '\~$', '\.swp$', '\.swo$', '\.class$']
 
 "==============================================================================
@@ -172,8 +172,8 @@ au BufRead,BufNewFile *.wiki set filetype=wiki
 "==============================================================================
 " javacomplete
 "==============================================================================
-"if has("autocmd") 
-"  autocmd Filetype java setlocal omnifunc=javacomplete#Complete 
+"if has("autocmd")
+"  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 "  autocmd FileType java inoremap <buffer> . .<C-X><C-O><C-P>
 "endif
 
@@ -181,7 +181,7 @@ au BufRead,BufNewFile *.wiki set filetype=wiki
 " eclim
 "==============================================================================
 let g:EclimCompletionMethod = 'omnifunc'
-if has("autocmd") 
+if has("autocmd")
   autocmd Filetype java nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
   autocmd Filetype java nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x declarations<cr>
   autocmd Filetype java nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>

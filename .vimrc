@@ -93,6 +93,7 @@ Bundle 'vim-scripts/Trac-Wikimarkup'
 "Bundle 'javacomplete'
 Bundle 'Valloric/YouCompleteMe'
 "Bundle 'mhinz/vim-startify'
+Bundle 'bronson/vim-trailing-whitespace'
 
 " >>> bundles - snippets
 "Bundle 'tomtom/tlib_vim'                                                       

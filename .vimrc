@@ -69,12 +69,10 @@ call vundle#rc()
 
 " >>> bundles
 Bundle 'gmarik/vundle'
-"Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Yggdroot/indentLine'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-"Bundle 'Lokaltog/vim-powerline'
 Bundle 'bling/vim-airline'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tmhedberg/SimpylFold'
@@ -98,10 +96,6 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'TagmaTasks'
 
 " >>> bundles - snippets
-"Bundle 'tomtom/tlib_vim'
-"Bundle 'MarcWeber/vim-addon-mw-utils'
-"Bundle 'garbas/vim-snipmate'
-"Bundle 'honza/vim-snippets'
 Bundle 'SirVer/ultisnips'
 
 " >>> bundles - color scheme

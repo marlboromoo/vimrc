@@ -1,6 +1,6 @@
 ## Plugins
 * [vundle](https://github.com/gmarik/vundle): Vundle, the plug-in manager for Vim
-* [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides): A Vim plugin for visually displaying indent levels in code
+* [indentLine](https://github.com/Yggdroot/indentLine): A vim plugin to display the indention levels with thin vertical lines
 * [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by class etc.
 * [nerdtree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim.
 * [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
@@ -20,6 +20,9 @@
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
 * [Trac-Wikimarkup](https://github.com/vim-scripts/Trac-Wikimarkup): Better syntax highlighting for Trac wikimarkup
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe): A code-completion engine for Vim
+* [vim-trailing-whitespace](https://github.com/bronson/vim-trailing-whitespace): Highlights trailing whitespace in red and provides
+* [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim
+* [TagmaTasks](https://github.com/vim-scripts/TagmaTasks): IDE like Task List for Vim buffers.
 * [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
 * [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim

@@ -213,4 +213,8 @@ let g:ycm_cache_omnifunc = 1
 "let g:UltiSnipsJumpForwardTrigger="<c-j>"
 "let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
+"==============================================================================
+" airline
+"==============================================================================
+let g:airline#extensions#syntastic#enabled = 0
 

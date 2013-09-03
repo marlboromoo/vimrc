@@ -104,6 +104,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'TagmaTasks'
+Bundle 'airblade/vim-gitgutter'
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'

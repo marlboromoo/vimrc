@@ -56,6 +56,11 @@ function count(){
     echo $i
 }
 
+function merge_plugins_md() {
+    head -n+1 $README_PLUGINS >> $README
+    tail -n+2 $README_PLUGINS | sort >> $README
+}
+
 function gen_md() {
     echo "Please wait .."
     #. base
@@ -71,13 +76,12 @@ function gen_md() {
         echo "[$i:$len] $plugin"
         gen_plugin_md $plugin >> $README_PLUGINS
     done
-    #. merge
-    cat $README_PLUGINS >> $README
+    merge_plugins_md
 }
 
 function gen_md_from_cache() {
     cat $README_BASE > $README
-    cat $README_PLUGINS >> $README
+    merge_plugins_md
 }
 
 function get_usrpwd_for_github(){

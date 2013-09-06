@@ -16,31 +16,31 @@ Please refer to the document listed below.
 * [eclim](http://eclim.org/)
 
 ## Plugins
-* [vundle](https://github.com/gmarik/vundle): Vundle, the plug-in manager for Vim
-* [indentLine](https://github.com/Yggdroot/indentLine): A vim plugin to display the indention levels with thin vertical lines
-* [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by class etc.
-* [nerdtree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim.
-* [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
-* [vim-airline](https://github.com/bling/vim-airline): lean & mean statusline for vim that's light as air
-* [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs): NERDTree and tabs together in Vim, painlessly
-* [SimpylFold](https://github.com/tmhedberg/SimpylFold): No-BS Python code folding for Vim
-* [indentpython.vim](https://github.com/vim-scripts/indentpython.vim): An alternative indentation script for python
-* [vim-flavored-markdown](https://github.com/jtratner/vim-flavored-markdown): null
-* [vim-surround](https://github.com/tpope/vim-surround): surround.vim
-* [vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs): Vim plugin, insert or delete brackets, parens, quotes in pair
-* [vim-fugitive](https://github.com/tpope/vim-fugitive): fugitive.vim
 * [ctrlp.vim](https://github.com/kien/ctrlp.vim): Fuzzy file, buffer, mru, tag, etc finder.
-* [rainbow_parentheses.vim](https://github.com/kien/rainbow_parentheses.vim): Better Rainbow Parentheses
 * [DrawIt](https://github.com/vim-scripts/DrawIt): Ascii drawing plugin
+* [indentLine](https://github.com/Yggdroot/indentLine): A vim plugin to display the indention levels with thin vertical lines
+* [indentpython.vim](https://github.com/vim-scripts/indentpython.vim): An alternative indentation script for python
 * [jedi-vim](https://github.com/davidhalter/jedi-vim): Using the jedi autocompletion library for VIM.
-* [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
-* [Trac-Wikimarkup](https://github.com/vim-scripts/Trac-Wikimarkup): Better syntax highlighting for Trac wikimarkup
-* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe): A code-completion engine for Vim
-* [vim-trailing-whitespace](https://github.com/bronson/vim-trailing-whitespace): Highlights trailing whitespace in red and provides
-* [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim
-* [TagmaTasks](https://github.com/vim-scripts/TagmaTasks): IDE like Task List for Vim buffers.
-* [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
-* [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim
+* [nerdtree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim.
+* [rainbow_parentheses.vim](https://github.com/kien/rainbow_parentheses.vim): Better Rainbow Parentheses
+* [SimpylFold](https://github.com/tmhedberg/SimpylFold): No-BS Python code folding for Vim
+* [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
+* [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by class etc.
+* [TagmaTasks](https://github.com/vim-scripts/TagmaTasks): IDE like Task List for Vim buffers.
+* [Trac-Wikimarkup](https://github.com/vim-scripts/Trac-Wikimarkup): Better syntax highlighting for Trac wikimarkup
+* [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
+* [vim-airline](https://github.com/bling/vim-airline): lean & mean statusline for vim that's light as air
+* [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
+* [vim-flavored-markdown](https://github.com/jtratner/vim-flavored-markdown): null
+* [vim-fugitive](https://github.com/tpope/vim-fugitive): fugitive.vim
+* [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim
+* [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs): NERDTree and tabs together in Vim, painlessly
+* [vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim
+* [vim-surround](https://github.com/tpope/vim-surround): surround.vim
+* [vim-trailing-whitespace](https://github.com/bronson/vim-trailing-whitespace): Highlights trailing whitespace in red and provides
+* [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
+* [vundle](https://github.com/gmarik/vundle): Vundle, the plug-in manager for Vim
 * [Wombat](https://github.com/vim-scripts/Wombat): Dark gray color scheme sharing some similarities with Desert
+* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe): A code-completion engine for Vim

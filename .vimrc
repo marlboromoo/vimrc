@@ -219,3 +219,8 @@ let g:ycm_cache_omnifunc = 1
 "==============================================================================
 let g:airline#extensions#syntastic#enabled = 0
 
+"==============================================================================
+" vim-flavored-markdown
+"==============================================================================
+au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+

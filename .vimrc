@@ -113,6 +113,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'molok/vim-vombato-colorscheme'
 Bundle 'tomasr/molokai'
 Bundle 'Wombat'
+Bundle 'marlboromoo/Toy-Chest-Theme', {'rtp': 'Vim/'}
 
 " >>> other settings
 filetype plugin indent on " required!

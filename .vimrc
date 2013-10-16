@@ -67,6 +67,10 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+" >>> Easier tab navigation - Use shift-[hl] to select the tab!
+nnoremap <S-h> gT
+nnoremap <S-l> gt
+
 "==============================================================================
 " vundle: the plug-in manager for Vim, https://github.com/gmarik/vundle
 "

@@ -28,28 +28,28 @@ set ruler
 set gfn=terminus\ Regular\ 11
 syntax on
 set pastetoggle=<F3>
-"let mapleader = ","
+let mapleader = ","
 
 "==============================================================================
 " vim other settings
 "==============================================================================
-"" >>> copy/paste, ref:http://superuser.com/questions/214715/map-shift-insert-in-vim
+" >>> copy/paste, ref:http://superuser.com/questions/214715/map-shift-insert-in-vim
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 
-"" >>> column line
+" >>> column line
 set colorcolumn=80
 highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929
 
-"" >>> complete
+" >>> complete
 "set completeopt=menu,preview
 set completeopt=menu,longest,menuone
 
-"" >>> list
+" >>> list
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
-"" >>> folding
+" >>> folding
 set nofoldenable
 
 " >>> python pep8
@@ -60,6 +60,12 @@ set tabstop=8
 set smarttab
 set expandtab
 set fileformat=unix
+
+" >>> Easier split navigation - Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
 
 "==============================================================================
 " vundle: the plug-in manager for Vim, https://github.com/gmarik/vundle
@@ -143,12 +149,12 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 "==============================================================================
 " tagbar
 "==============================================================================
-map <C-t> :TagbarToggle<cr>
+map <leader>ta :TagbarToggle<cr>
+let g:tagbar_map_help = '?'
 
 "==============================================================================
 " NERDTree
 "==============================================================================
-"map <C-t> :TagbarToggle<cr>
 let NERDTreeIgnore=[
             \ '\.pyc$', '\.pyo$', '\.pyd$',
             \ '\~$', '\.swp$', '\.swo$', '\.class$']
@@ -156,7 +162,7 @@ let NERDTreeIgnore=[
 "==============================================================================
 " vim-nerdtree-tabs
 "==============================================================================
-map <C-n> :NERDTreeTabsToggle<cr>
+map <leader>tr :NERDTreeTabsToggle<cr>
 
 "==============================================================================
 " syntastic

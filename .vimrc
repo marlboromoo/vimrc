@@ -108,13 +108,13 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/DrawIt'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'vim-scripts/Trac-Wikimarkup'
 "Bundle 'javacomplete'
 Bundle 'Valloric/YouCompleteMe'
 "Bundle 'mhinz/vim-startify'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'TagmaTasks'
+Bundle 'georgefs/vim-copycat'
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'
@@ -180,11 +180,6 @@ let g:syntastic_python_checkers=['pyflakes']
 " vim-powerline
 "==============================================================================
 set laststatus=2
-
-"==============================================================================
-" Trac-Wikimarkup
-"==============================================================================
-au BufRead,BufNewFile *.wiki set filetype=wiki
 
 "==============================================================================
 " javacomplete

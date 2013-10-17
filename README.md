@@ -26,9 +26,7 @@ Please refer to the document listed below.
 * [eclim](http://eclim.org/)
 
 ## Key Bindings
- - `N` : Normal mode
- - `V` : Virtual mode
- - `I` : Insert mode
+`N` : Normal mode, `V` : Virtual mode, `I` : Insert mode
 
 ### Navigation
  - `N` `<C-k>` : select the up split

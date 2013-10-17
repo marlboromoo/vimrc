@@ -8,7 +8,7 @@ README="README.md"
 
 function get_plugins_from_vimrc(){
     echo $(cat ~/.vimrc | grep ^Bundle | sed "s/Bundle '//g" | sed "s/'//g" | \
-        sed "s/\.git$//g")
+        sed "s/\.git$//g" | cut -d ',' -f 1)
 }
 
 function get_plugin_name() {

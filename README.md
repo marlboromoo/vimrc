@@ -8,6 +8,7 @@ Personal settings/plugins for vim/gvim.
 sudo apt-get install \
 build-essential cmake python-dev python-pip python-setuptools xclip
 sudo easy_install copycat copycat-clipboard
+```
 
 ### With Vundle
 ```
@@ -19,6 +20,7 @@ vim +BundleInstall +qall
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer
 ```
+
 ### By Hand
 Please refer to the document listed below.
 * [eclim](http://eclim.org/)

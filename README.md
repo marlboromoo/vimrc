@@ -86,9 +86,9 @@ Please refer to the document listed below.
 * [Toy-Chest-Theme](https://github.com/marlboromoo/Toy-Chest-Theme): A \Flat-UI\ color scheme for programmers who like to play.
 * [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
 * [vim-airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
-* [vim-copycat](https://github.com/georgefs/vim-copycat): 
+* [vim-copycat](https://github.com/georgefs/vim-copycat): vim-copycat provides much simpler way to share clipboard between terminal and system
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
-* [vim-flavored-markdown](https://github.com/jtratner/vim-flavored-markdown): null
+* [vim-flavored-markdown](https://github.com/jtratner/vim-flavored-markdown): Add-on to Tim Pope's markdown.vim to highlight using Github Flavored Markdown.
 * [vim-fugitive](https://github.com/tpope/vim-fugitive): fugitive.vim
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim
 * [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs): NERDTree and tabs together in Vim, painlessly

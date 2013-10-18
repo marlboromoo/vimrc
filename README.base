@@ -14,8 +14,10 @@ Personal settings/plugins for vim/gvim.
 
 ### Dependency
 ```
+sudo add-apt-repository ppa:fcwu-tw/ppa #. vim 7.4 repository for YCM
+sudo apt-get update
 sudo apt-get install \
-build-essential cmake python-dev python-pip python-setuptools xclip
+vim vim-gnome build-essential cmake python-dev python-pip python-setuptools xclip
 sudo easy_install copycat copycat-clipboard
 ```
 

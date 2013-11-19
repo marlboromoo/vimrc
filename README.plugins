@@ -8,7 +8,7 @@
 * [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs): NERDTree and tabs together in Vim, painlessly
 * [SimpylFold](https://github.com/tmhedberg/SimpylFold): No-BS Python code folding for Vim
 * [indentpython.vim](https://github.com/vim-scripts/indentpython.vim): An alternative indentation script for python
-* [vim-flavored-markdown](https://github.com/jtratner/vim-flavored-markdown): Add-on to Tim Pope's markdown.vim to highlight using Github Flavored Markdown.
+* [vim-flavored-markdown](https://github.com/jtratner/vim-flavored-markdown): null
 * [vim-surround](https://github.com/tpope/vim-surround): surround.vim
 * [vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs): Vim plugin, insert or delete brackets, parens, quotes in pair
@@ -22,7 +22,9 @@
 * [vim-trailing-whitespace](https://github.com/bronson/vim-trailing-whitespace): Highlights trailing whitespace in red and provides
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim
 * [TagmaTasks](https://github.com/vim-scripts/TagmaTasks): IDE like Task List for Vim buffers.
-* [vim-copycat](https://github.com/georgefs/vim-copycat): vim-copycat provides much simpler way to share clipboard between terminal and system
+* [vim-copycat](https://github.com/marlboromoo/vim-copycat): vim-copycat provides much simpler way to share clipboard between terminal and system
+* [vim-golang](https://github.com/jnwhiteh/vim-golang): Github mirror of Go vimscripts, synced with main repository
+* [gocode](https://github.com/nsf/gocode): An autocompletion daemon for the Go programming language
 * [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
 * [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim

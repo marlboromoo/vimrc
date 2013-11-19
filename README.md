@@ -15,7 +15,7 @@ Personal settings/plugins for vim/gvim.
 ### Dependency
 ```
 sudo apt-get install \
-build-essential cmake python-dev python-pip python-setuptools xclip
+build-essential cmake golang python-dev python-pip python-setuptools xclip
 sudo easy_install copycat copycat-clipboard
 ```
 
@@ -25,6 +25,8 @@ cd ~/
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
 bash ./vimrc/init.sh
 vim +BundleInstall +qall
+#. Gocode
+sudo go get -u github.com/nsf/gocode
 #. Compiling YCM with semantic support for C-family languages:
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer
@@ -82,6 +84,7 @@ Please refer to the document listed below.
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs): Vim plugin, insert or delete brackets, parens, quotes in pair
 * [ctrlp.vim](https://github.com/kien/ctrlp.vim): Fuzzy file, buffer, mru, tag, etc finder.
 * [DrawIt](https://github.com/vim-scripts/DrawIt): Ascii drawing plugin
+* [gocode](https://github.com/nsf/gocode): An autocompletion daemon for the Go programming language
 * [indentLine](https://github.com/Yggdroot/indentLine): A vim plugin to display the indention levels with thin vertical lines
 * [indentpython.vim](https://github.com/vim-scripts/indentpython.vim): An alternative indentation script for python
 * [jedi-vim](https://github.com/davidhalter/jedi-vim): Using the jedi autocompletion library for VIM.
@@ -95,10 +98,11 @@ Please refer to the document listed below.
 * [Toy-Chest-Theme](https://github.com/marlboromoo/Toy-Chest-Theme): A \Flat-UI\ color scheme for programmers who like to play.
 * [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
 * [vim-airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
-* [vim-copycat](https://github.com/georgefs/vim-copycat): vim-copycat provides much simpler way to share clipboard between terminal and system
+* [vim-copycat](https://github.com/marlboromoo/vim-copycat): vim-copycat provides much simpler way to share clipboard between terminal and system
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
-* [vim-flavored-markdown](https://github.com/jtratner/vim-flavored-markdown): Add-on to Tim Pope's markdown.vim to highlight using Github Flavored Markdown.
+* [vim-flavored-markdown](https://github.com/jtratner/vim-flavored-markdown): null
 * [vim-fugitive](https://github.com/tpope/vim-fugitive): fugitive.vim
+* [vim-golang](https://github.com/jnwhiteh/vim-golang): Github mirror of Go vimscripts, synced with main repository
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim
 * [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs): NERDTree and tabs together in Vim, painlessly
 * [vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim

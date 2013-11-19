@@ -15,7 +15,7 @@ Personal settings/plugins for vim/gvim.
 ### Dependency
 ```
 sudo apt-get install \
-build-essential cmake python-dev python-pip python-setuptools xclip
+build-essential cmake golang python-dev python-pip python-setuptools xclip
 sudo easy_install copycat copycat-clipboard
 ```
 
@@ -25,6 +25,8 @@ cd ~/
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
 bash ./vimrc/init.sh
 vim +BundleInstall +qall
+#. Gocode
+sudo go get -u github.com/nsf/gocode
 #. Compiling YCM with semantic support for C-family languages:
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer

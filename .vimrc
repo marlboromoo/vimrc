@@ -114,7 +114,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'TagmaTasks'
-Bundle 'georgefs/vim-copycat'
+Bundle 'marlboromoo/vim-copycat'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'nsf/gocode', {'rtp': 'vim/'}
 

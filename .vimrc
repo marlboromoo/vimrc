@@ -115,6 +115,8 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'TagmaTasks'
 Bundle 'georgefs/vim-copycat'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'nsf/gocode', {'rtp': 'vim/'}
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'

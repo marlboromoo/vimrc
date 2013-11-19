@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Vimrc by marlboromoo</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Vimrc</h1>
+        <h2>.vimrc for marlboromoo.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/marlboromoo/vimrc/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/marlboromoo/vimrc/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/marlboromoo/vimrc" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="marlboromoos-vimrc" class="anchor" href="#marlboromoos-vimrc"><span class="octicon octicon-link"></span></a>Marlboromoo's vimrc</h1>
+
+<p>Personal settings/plugins for vim/gvim.</p>
+
+<pre><code>    ___  ___           _ _                    ___  ___
+    |  \/  |          | | |                   |  \/  |
+    | .  . | __ _ _ __| | |__   ___  _ __ ___ | .  . | ___   ___
+    | |\/| |/ _` | '__| | '_ \ / _ \| '__/ _ \| |\/| |/ _ \ / _ \
+    | |  | | (_| | |  | | |_) | (_) | | | (_) | |  | | (_) | (_) |
+    \_|  |_/\__,_|_|  |_|_.__/ \___/|_|  \___/\_|  |_/\___/ \___/ 's vimrc
+
+</code></pre>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<h3>
+<a name="dependency" class="anchor" href="#dependency"><span class="octicon octicon-link"></span></a>Dependency</h3>
+
+<pre><code>sudo add-apt-repository ppa:fcwu-tw/ppa #. vim 7.4 repository for YCM
+sudo apt-get update
+sudo apt-get install vim vim-gnome \
+build-essential cmake golang python-dev python-pip python-setuptools xclip
+sudo easy_install copycat copycat-clipboard
+</code></pre>
+
+<h3>
+<a name="with-vundle" class="anchor" href="#with-vundle"><span class="octicon octicon-link"></span></a>With Vundle</h3>
+
+<pre><code>cd ~/
+git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
+bash ./vimrc/init.sh
+vim +BundleInstall +qall
+#. Gocode
+sudo go get -u github.com/nsf/gocode
+#. Compiling YCM with semantic support for C-family languages:
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh --clang-completer
+</code></pre>
+
+<h3>
+<a name="by-hand" class="anchor" href="#by-hand"><span class="octicon octicon-link"></span></a>By Hand</h3>
+
+<p>Please refer to the document listed below.</p>
+
+<ul>
+<li><a href="http://eclim.org/">eclim</a></li>
+</ul><h2>
+<a name="key-bindings" class="anchor" href="#key-bindings"><span class="octicon octicon-link"></span></a>Key Bindings</h2>
+
+<p><code>N</code> : Normal mode, <code>V</code> : Virtual mode, <code>I</code> : Insert mode</p>
+
+<h3>
+<a name="navigation" class="anchor" href="#navigation"><span class="octicon octicon-link"></span></a>Navigation</h3>
+
+<ul>
+<li>
+<code>N</code> <code>&lt;C-k&gt;</code> : select the up split</li>
+<li>
+<code>N</code> <code>&lt;C-j&gt;</code> : select the down split</li>
+<li>
+<code>N</code> <code>&lt;C-h&gt;</code> : select the left split</li>
+<li>
+<code>N</code> <code>&lt;C-l&gt;</code> : select the right split</li>
+<li>
+<code>N</code> <code>&lt;S-h&gt;</code> : select the left tab</li>
+<li>
+<code>N</code> <code>&lt;S-l&gt;</code> : select the right tab</li>
+</ul><h3>
+<a name="vim-copycat" class="anchor" href="#vim-copycat"><span class="octicon octicon-link"></span></a>vim-copycat</h3>
+
+<ul>
+<li>
+<code>V</code> <code>&lt;C-c&gt;c</code> : copy into system clipboard or copycat reg 0</li>
+<li>
+<code>I</code> <code>&lt;C-c&gt;p</code> : paste with system clipboard or copycat reg 0</li>
+<li>
+<code>V</code> <code>&lt;C-c&gt;C</code> : like c but copy into set reg</li>
+<li>
+<code>I</code> <code>&lt;C-c&gt;P</code> : like p but paste from reg</li>
+<li>
+<code>N</code> <code>&lt;C-c&gt;l</code> : show copycat data</li>
+<li>
+<code>N</code> <code>&lt;C-c&gt;d</code> : type reg name then remove copycat reg</li>
+</ul><h3>
+<a name="drawit" class="anchor" href="#drawit"><span class="octicon octicon-link"></span></a>Drawit</h3>
+
+<ul>
+<li>
+<code>N</code> <code>&lt;leader&gt;di</code> : to start <strong>DrawIt</strong>
+</li>
+<li>
+<code>N</code> <code>&lt;leader&gt;ds</code> : to stop <strong>DrawIt</strong>
+</li>
+</ul><h3>
+<a name="surroundvim" class="anchor" href="#surroundvim"><span class="octicon octicon-link"></span></a>surround.vim</h3>
+
+<ul>
+<li>
+<code>N</code> <code>cs</code>char : change surroundings</li>
+<li>
+<code>N</code> <code>ysiw</code>char : surround a word</li>
+<li>
+<code>N</code> <code>yss</code>char : surround a line</li>
+<li>
+<code>N</code> <code>ds</code>char : delete surroundings</li>
+</ul><h3>
+<a name="ultisnips" class="anchor" href="#ultisnips"><span class="octicon octicon-link"></span></a>UltiSnips</h3>
+
+<ul>
+<li>
+<code>I</code> <code>&lt;tab&gt;</code> : expand</li>
+<li>
+<code>I</code> <code>&lt;c-tab&gt;</code> : list snippets (gvim only?)</li>
+<li>
+<code>I</code> <code>&lt;c-j&gt;</code> : jump forward</li>
+<li>
+<code>I</code> <code>&lt;c-k&gt;</code> : jump backward</li>
+</ul><h3>
+<a name="misc" class="anchor" href="#misc"><span class="octicon octicon-link"></span></a>MISC</h3>
+
+<ul>
+<li>
+<code>N</code> <code>&lt;S-k&gt;</code> : show python documentation</li>
+<li>
+<code>N</code> <code>&lt;C-p&gt;</code> : toggle <strong>ctrlp.vim</strong> window</li>
+<li>
+<code>N</code> <code>&lt;leader&gt;l</code> : toggle the list options(to show the custome characters)</li>
+<li>
+<code>N</code> <code>&lt;leader&gt;ta</code> : toggle the <strong>tagbar</strong> window</li>
+<li>
+<code>N</code> <code>&lt;leader&gt;tr</code> : toggle the <strong>NERDTree</strong> window</li>
+<li>
+<code>N</code> <code>&lt;leader&gt;&lt;leader&gt;w</code> : trigger the <strong>vim-easymotion</strong>.</li>
+<li>
+<code>N</code> <code>.</code> : repeat the last command</li>
+</ul><h2>
+<a name="plugins" class="anchor" href="#plugins"><span class="octicon octicon-link"></span></a>Plugins</h2>
+
+<ul>
+<li>
+<a href="https://github.com/jiangmiao/auto-pairs">auto-pairs</a>: Vim plugin, insert or delete brackets, parens, quotes in pair</li>
+<li>
+<a href="https://github.com/kien/ctrlp.vim">ctrlp.vim</a>: Fuzzy file, buffer, mru, tag, etc finder.</li>
+<li>
+<a href="https://github.com/vim-scripts/DrawIt">DrawIt</a>: Ascii drawing plugin</li>
+<li>
+<a href="https://github.com/nsf/gocode">gocode</a>: An autocompletion daemon for the Go programming language</li>
+<li>
+<a href="https://github.com/Yggdroot/indentLine">indentLine</a>: A vim plugin to display the indention levels with thin vertical lines</li>
+<li>
+<a href="https://github.com/vim-scripts/indentpython.vim">indentpython.vim</a>: An alternative indentation script for python</li>
+<li>
+<a href="https://github.com/davidhalter/jedi-vim">jedi-vim</a>: Using the jedi autocompletion library for VIM.</li>
+<li>
+<a href="https://github.com/tomasr/molokai">molokai</a>: Molokai color scheme for Vim</li>
+<li>
+<a href="https://github.com/scrooloose/nerdtree">nerdtree</a>: A tree explorer plugin for vim.</li>
+<li>
+<a href="https://github.com/kien/rainbow_parentheses.vim">rainbow_parentheses.vim</a>: Better Rainbow Parentheses</li>
+<li>
+<a href="https://github.com/tmhedberg/SimpylFold">SimpylFold</a>: No-BS Python code folding for Vim</li>
+<li>
+<a href="https://github.com/scrooloose/syntastic">syntastic</a>: Syntax checking hacks for vim</li>
+<li>
+<a href="https://github.com/majutsushi/tagbar">tagbar</a>: Vim plugin that displays tags in a window, ordered by class etc.</li>
+<li>
+<a href="https://github.com/vim-scripts/TagmaTasks">TagmaTasks</a>: IDE like Task List for Vim buffers.</li>
+<li>
+<a href="https://github.com/marlboromoo/Toy-Chest-Theme">Toy-Chest-Theme</a>: A \Flat-UI\ color scheme for programmers who like to play.</li>
+<li>
+<a href="https://github.com/SirVer/ultisnips">ultisnips</a>: Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!</li>
+<li>
+<a href="https://github.com/bling/vim-airline">vim-airline</a>: lean &amp; mean status/tabline for vim that's light as air</li>
+<li>
+<a href="https://github.com/marlboromoo/vim-copycat">vim-copycat</a>: vim-copycat provides much simpler way to share clipboard between terminal and system</li>
+<li>
+<a href="https://github.com/Lokaltog/vim-easymotion">vim-easymotion</a>: Vim motions on speed!</li>
+<li>
+<a href="https://github.com/jtratner/vim-flavored-markdown">vim-flavored-markdown</a>: null</li>
+<li>
+<a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a>: fugitive.vim</li>
+<li>
+<a href="https://github.com/jnwhiteh/vim-golang">vim-golang</a>: Github mirror of Go vimscripts, synced with main repository</li>
+<li>
+<a href="https://github.com/terryma/vim-multiple-cursors">vim-multiple-cursors</a>: True Sublime Text style multiple selections for Vim</li>
+<li>
+<a href="https://github.com/jistr/vim-nerdtree-tabs">vim-nerdtree-tabs</a>: NERDTree and tabs together in Vim, painlessly</li>
+<li>
+<a href="https://github.com/tpope/vim-repeat">vim-repeat</a>: repeat.vim</li>
+<li>
+<a href="https://github.com/tpope/vim-surround">vim-surround</a>: surround.vim</li>
+<li>
+<a href="https://github.com/bronson/vim-trailing-whitespace">vim-trailing-whitespace</a>: Highlights trailing whitespace in red and provides</li>
+<li>
+<a href="https://github.com/molok/vim-vombato-colorscheme">vim-vombato-colorscheme</a>: Colorscheme forked from Wombat, much more complete than the original</li>
+<li>
+<a href="https://github.com/gmarik/vundle">vundle</a>: Vundle, the plug-in manager for Vim</li>
+<li>
+<a href="https://github.com/vim-scripts/Wombat">Wombat</a>: Dark gray color scheme sharing some similarities with Desert</li>
+<li>
+<a href="https://github.com/Valloric/YouCompleteMe">YouCompleteMe</a>: A code-completion engine for Vim</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>

@@ -17,8 +17,13 @@ Personal settings/plugins for vim/gvim.
 sudo add-apt-repository ppa:fcwu-tw/ppa #. vim 7.4 repository for YCM
 sudo apt-get update
 sudo apt-get install vim vim-gnome \
-build-essential cmake golang python-dev python-pip python-setuptools xclip
+build-essential cmake python-dev python-pip python-setuptools xclip
 sudo easy_install copycat copycat-clipboard
+#. golang
+bash < <(curl -s https://raw.github.com/moovweb/gvm/master/binscripts/gvm-installer)
+source "$HOME/.gvm/scripts/gvm"
+gvm install go1.1.2
+gvm use go1.1.2 --default
 ```
 
 ### With Vundle
@@ -27,11 +32,12 @@ cd ~/
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
 bash ./vimrc/init.sh
 vim +BundleInstall +qall
-#. Gocode
-sudo go get -u github.com/nsf/gocode
 #. Compiling YCM with semantic support for C-family languages:
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer
+#. golang
+go get -u github.com/nsf/gocode
+go get -u github.com/jstemmer/gotags
 ```
 
 ### By Hand
@@ -39,7 +45,7 @@ Please refer to the document listed below.
 * [eclim](http://eclim.org/)
 
 ## Key Bindings
-`N` : Normal mode, `V` : Virtual mode, `I` : Insert mode
+`N` : Normal mode, `V` : Virtual mode, `I` : Insert mode, `C`: Command line
 
 ### Navigation
  - `N` `<C-k>` : select the up split
@@ -72,6 +78,12 @@ Please refer to the document listed below.
  - `I` `<c-tab>` : list snippets (gvim only?)
  - `I` `<c-j>` : jump forward
  - `I` `<c-k>` : jump backward
+
+### vim-golang
+ -  `C` `Godoc` : show document.
+ -  `C` `Import` : import package.
+ -  `C` `Drop` : drop packeage
+ -  `C` `Fmt` : format the code.
 
 ### MISC
  - `N` `<S-k>` : show python documentation

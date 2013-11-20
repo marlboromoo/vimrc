@@ -157,6 +157,33 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 "==============================================================================
 map <leader>ta :TagbarToggle<cr>
 let g:tagbar_map_help = '?'
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
 
 "==============================================================================
 " NERDTree
@@ -231,4 +258,9 @@ let g:airline#extensions#syntastic#enabled = 0
 " vim-flavored-markdown
 "==============================================================================
 au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+
+"==============================================================================
+" vim-golang
+"==============================================================================
+au FileType go au BufWritePre <buffer> Fmt
 

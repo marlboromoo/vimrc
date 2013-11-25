@@ -117,6 +117,7 @@ Bundle 'TagmaTasks'
 Bundle 'marlboromoo/vim-copycat'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'nsf/gocode', {'rtp': 'vim/'}
+Bundle 'dgryski/vim-godef'
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'
@@ -264,6 +265,13 @@ au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 " vim-golang
 "==============================================================================
 "au FileType go au BufWritePre <buffer> Fmt
+au Filetype go nmap <silent> <s-k> :Godoc<CR>
+
+"==============================================================================
+" vim-godef
+"==============================================================================
+"g:godef_split=0
+"g:godef_same_file_in_same_window=1
 
 "==============================================================================
 " ctags

@@ -38,6 +38,7 @@ cd ~/.vim/bundle/YouCompleteMe
 #. golang
 go get -u github.com/nsf/gocode
 go get -u github.com/jstemmer/gotags
+go get -u code.google.com/p/rog-go/exp/cmd/godef
 ```
 
 ### By Hand

@@ -43,6 +43,12 @@
 </code></pre>
 
 <h2>
+<a name="optimize-for" class="anchor" href="#optimize-for"><span class="octicon octicon-link"></span></a>Optimize For</h2>
+
+<ul>
+<li>Python</li>
+<li>Go</li>
+</ul><h2>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <h3>
@@ -51,8 +57,13 @@
 <pre><code>sudo add-apt-repository ppa:fcwu-tw/ppa #. vim 7.4 repository for YCM
 sudo apt-get update
 sudo apt-get install vim vim-gnome \
-build-essential cmake golang python-dev python-pip python-setuptools xclip
+build-essential cmake python-dev python-pip python-setuptools xclip
 sudo easy_install copycat copycat-clipboard
+#. golang
+bash &lt; &lt;(curl -s https://raw.github.com/moovweb/gvm/master/binscripts/gvm-installer)
+source "$HOME/.gvm/scripts/gvm"
+gvm install go1.1.2
+gvm use go1.1.2 --default
 </code></pre>
 
 <h3>
@@ -62,11 +73,13 @@ sudo easy_install copycat copycat-clipboard
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
 bash ./vimrc/init.sh
 vim +BundleInstall +qall
-#. Gocode
-sudo go get -u github.com/nsf/gocode
 #. Compiling YCM with semantic support for C-family languages:
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer
+#. golang
+go get -u github.com/nsf/gocode
+go get -u github.com/jstemmer/gotags
+go get -u code.google.com/p/rog-go/exp/cmd/godef
 </code></pre>
 
 <h3>
@@ -79,7 +92,7 @@ cd ~/.vim/bundle/YouCompleteMe
 </ul><h2>
 <a name="key-bindings" class="anchor" href="#key-bindings"><span class="octicon octicon-link"></span></a>Key Bindings</h2>
 
-<p><code>N</code> : Normal mode, <code>V</code> : Virtual mode, <code>I</code> : Insert mode</p>
+<p><code>N</code> : Normal mode, <code>V</code> : Virtual mode, <code>I</code> : Insert mode, <code>C</code>: Command line</p>
 
 <h3>
 <a name="navigation" class="anchor" href="#navigation"><span class="octicon octicon-link"></span></a>Navigation</h3>
@@ -147,6 +160,24 @@ cd ~/.vim/bundle/YouCompleteMe
 <code>I</code> <code>&lt;c-j&gt;</code> : jump forward</li>
 <li>
 <code>I</code> <code>&lt;c-k&gt;</code> : jump backward</li>
+</ul><h3>
+<a name="vim-golang" class="anchor" href="#vim-golang"><span class="octicon octicon-link"></span></a>vim-golang</h3>
+
+<ul>
+<li> <code>C</code> <code>Godoc</code> : show document.</li>
+<li> <code>C</code> <code>Import</code> : import package.</li>
+<li> <code>C</code> <code>Drop</code> : drop packeage</li>
+<li> <code>C</code> <code>Fmt</code> : format the code.</li>
+</ul><h3>
+<a name="ctrlpvim" class="anchor" href="#ctrlpvim"><span class="octicon octicon-link"></span></a>ctrlp.vim</h3>
+
+<ul>
+<li>
+<code>N</code>  : invoke CtrlP</li>
+<li>
+<code>N</code> / : navigate the result list (in CtrlP window.)</li>
+<li>
+<code>N</code> / : cycle between modes (in CtrlP window.)</li>
 </ul><h3>
 <a name="misc" class="anchor" href="#misc"><span class="octicon octicon-link"></span></a>MISC</h3>
 

@@ -10,6 +10,10 @@ Personal settings/plugins for vim/gvim.
     \_|  |_/\__,_|_|  |_|_.__/ \___/|_|  \___/\_|  |_/\___/ \___/ 's vimrc
 
 ```
+## Optimize For
+ - Python
+ - Go
+
 ## Installation
 
 ### Dependency

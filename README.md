@@ -85,6 +85,11 @@ Please refer to the document listed below.
  -  `C` `Drop` : drop packeage
  -  `C` `Fmt` : format the code.
 
+### ctrlp.vim
+ - `N` <c-p> : invoke CtrlP
+ - `N` <c-j>/<c-k> : navigate the result list (in CtrlP window.)
+ - `N` <c-f>/<c-b> : cycle between modes (in CtrlP window.)
+
 ### MISC
  - `N` `<S-k>` : show python documentation
  - `N` `<C-p>` : toggle **ctrlp.vim** window

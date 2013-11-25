@@ -156,6 +156,7 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 " tagbar
 "==============================================================================
 map <leader>ta :TagbarToggle<cr>
+let g:tagbar_autoclose = 1
 let g:tagbar_map_help = '?'
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
@@ -262,5 +263,11 @@ au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 "==============================================================================
 " vim-golang
 "==============================================================================
-au FileType go au BufWritePre <buffer> Fmt
+"au FileType go au BufWritePre <buffer> Fmt
+
+"==============================================================================
+" ctags
+"==============================================================================
+"au BufWritePost *.go silent! !ctags -R *.go &
+"au BufWritePost *.py silent! !ctags -R *.py &
 

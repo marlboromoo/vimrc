@@ -266,6 +266,7 @@ au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 "==============================================================================
 "au FileType go au BufWritePre <buffer> Fmt
 au Filetype go nmap <silent> <s-k> :Godoc<CR>
+au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 
 "==============================================================================
 " vim-godef

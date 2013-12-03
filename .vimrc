@@ -134,6 +134,7 @@ Bundle 'marlboromoo/Toy-Chest-Theme', {'rtp': 'Vim/'}
 Bundle 'marlboromoo/vim-vitamins'
 Bundle 'marlboromoo/mustang-vim'
 Bundle 'zeis/vim-kolor'
+Bundle 'nanotech/jellybeans.vim'
 
 " >>> other settings
 filetype plugin indent on " required!
@@ -146,7 +147,7 @@ let g:vundle_default_git_proto = 'http'
 "==============================================================================
 " vim color scheme settings, set after bundle load
 "==============================================================================
-colorscheme molokai
+colorscheme jellybeans
 highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929
 
 "==============================================================================

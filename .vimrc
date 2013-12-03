@@ -1,9 +1,9 @@
 "
 "
-"    ___  ___           _ _                    ___  ___            
-"    |  \/  |          | | |                   |  \/  |            
-"    | .  . | __ _ _ __| | |__   ___  _ __ ___ | .  . | ___   ___  
-"    | |\/| |/ _` | '__| | '_ \ / _ \| '__/ _ \| |\/| |/ _ \ / _ \ 
+"    ___  ___           _ _                    ___  ___
+"    |  \/  |          | | |                   |  \/  |
+"    | .  . | __ _ _ __| | |__   ___  _ __ ___ | .  . | ___   ___
+"    | |\/| |/ _` | '__| | '_ \ / _ \| '__/ _ \| |\/| |/ _ \ / _ \
 "    | |  | | (_| | |  | | |_) | (_) | | | (_) | |  | | (_) | (_) |
 "    \_|  |_/\__,_|_|  |_|_.__/ \___/|_|  \___/\_|  |_/\___/ \___/ 's vimrc
 "
@@ -220,12 +220,12 @@ set laststatus=2
 "==============================================================================
 " eclim
 "==============================================================================
-let g:EclimCompletionMethod = 'omnifunc'
-if has("autocmd")
-  autocmd Filetype java nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
-  autocmd Filetype java nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x declarations<cr>
-  autocmd Filetype java nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
-endif
+"let g:EclimCompletionMethod = 'omnifunc'
+"if has("autocmd")
+"  autocmd Filetype java nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
+"  autocmd Filetype java nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x declarations<cr>
+"  autocmd Filetype java nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
+"endif
 
 "==============================================================================
 " jedi

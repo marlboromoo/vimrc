@@ -71,6 +71,9 @@ nmap <silent> <c-l> :wincmd l<CR>
 nnoremap <S-h> gT
 nnoremap <S-l> gt
 
+" >>> Avoid the escape key
+imap ii <Esc>
+
 "==============================================================================
 " vundle: the plug-in manager for Vim, https://github.com/gmarik/vundle
 "
@@ -264,7 +267,7 @@ au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 "==============================================================================
 " vim-golang
 "==============================================================================
-"au FileType go au BufWritePre <buffer> Fmt
+au FileType go au BufWritePre <buffer> Fmt
 au Filetype go nmap <silent> <s-k> :Godoc<CR>
 au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 

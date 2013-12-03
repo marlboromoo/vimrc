@@ -25,7 +25,8 @@ set hlsearch
 set noerrorbells
 set novisualbell
 set ruler
-set gfn=terminus\ Regular\ 11
+"set gfn=terminus\ Regular\ 11
+set gfn=Terminess\ Powerline\ 11
 syntax on
 set pastetoggle=<F3>
 let mapleader = ","
@@ -130,6 +131,9 @@ Bundle 'molok/vim-vombato-colorscheme'
 Bundle 'tomasr/molokai'
 Bundle 'Wombat'
 Bundle 'marlboromoo/Toy-Chest-Theme', {'rtp': 'Vim/'}
+Bundle 'marlboromoo/vim-vitamins'
+Bundle 'marlboromoo/mustang-vim'
+Bundle 'zeis/vim-kolor'
 
 " >>> other settings
 filetype plugin indent on " required!
@@ -258,6 +262,7 @@ let g:ycm_cache_omnifunc = 1
 " airline
 "==============================================================================
 let g:airline#extensions#syntastic#enabled = 0
+let g:airline_powerline_fonts = 1
 
 "==============================================================================
 " vim-flavored-markdown

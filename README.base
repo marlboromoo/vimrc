@@ -23,11 +23,25 @@ sudo apt-get update
 sudo apt-get install vim vim-gnome \
 build-essential cmake python-dev python-pip python-setuptools xclip
 sudo easy_install copycat copycat-clipboard
+
 #. golang
 bash < <(curl -s https://raw.github.com/moovweb/gvm/master/binscripts/gvm-installer)
 source "$HOME/.gvm/scripts/gvm"
 gvm install go1.1.2
 gvm use go1.1.2 --default
+
+#. Patched font, see: 
+#. https://powerline.readthedocs.org/en/latest/installation/linux.html
+#. http://askubuntu.com/questions/6710/how-can-i-use-bitmap-fonts-in-gvim
+cd /tmp/
+git clone https://github.com/Lokaltog/powerline-fonts
+mkdir -p ~/.fonts/
+cp -ra ./powerline-fonts/Terminus/ ~/.fonts/
+cd /etc/fonts/conf.d
+sudo rm 70-no-bitmaps.conf
+sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
+fc-cache -f -v ~/.fonts/
+
 ```
 
 ### With Vundle

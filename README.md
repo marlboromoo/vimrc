@@ -23,11 +23,25 @@ sudo apt-get update
 sudo apt-get install vim vim-gnome \
 build-essential cmake python-dev python-pip python-setuptools xclip
 sudo easy_install copycat copycat-clipboard
+
 #. golang
 bash < <(curl -s https://raw.github.com/moovweb/gvm/master/binscripts/gvm-installer)
 source "$HOME/.gvm/scripts/gvm"
 gvm install go1.1.2
 gvm use go1.1.2 --default
+
+#. Patched font, see: 
+#. https://powerline.readthedocs.org/en/latest/installation/linux.html
+#. http://askubuntu.com/questions/6710/how-can-i-use-bitmap-fonts-in-gvim
+cd /tmp/
+git clone https://github.com/Lokaltog/powerline-fonts
+mkdir -p ~/.fonts/
+cp -ra ./powerline-fonts/Terminus/ ~/.fonts/
+cd /etc/fonts/conf.d
+sudo rm 70-no-bitmaps.conf
+sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
+fc-cache -f -v ~/.fonts/
+
 ```
 
 ### With Vundle
@@ -113,6 +127,7 @@ Please refer to the document listed below.
 * [indentpython.vim](https://github.com/vim-scripts/indentpython.vim): An alternative indentation script for python
 * [jedi-vim](https://github.com/davidhalter/jedi-vim): Using the jedi autocompletion library for VIM.
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim
+* [mustang-vim](https://github.com/marlboromoo/mustang-vim): A slightly modified version of the original mustang-colorscheme for vim by hcalves.
 * [nerdtree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim.
 * [rainbow_parentheses.vim](https://github.com/kien/rainbow_parentheses.vim): Better Rainbow Parentheses
 * [SimpylFold](https://github.com/tmhedberg/SimpylFold): No-BS Python code folding for Vim
@@ -126,12 +141,15 @@ Please refer to the document listed below.
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
 * [vim-flavored-markdown](https://github.com/jtratner/vim-flavored-markdown): null
 * [vim-fugitive](https://github.com/tpope/vim-fugitive): fugitive.vim
+* [vim-godef](https://github.com/dgryski/vim-godef): vim plugin providing godef support
 * [vim-golang](https://github.com/jnwhiteh/vim-golang): Github mirror of Go vimscripts, synced with main repository
+* [vim-kolor](https://github.com/zeis/vim-kolor): Vim color scheme.
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim
 * [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs): NERDTree and tabs together in Vim, painlessly
 * [vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim
 * [vim-surround](https://github.com/tpope/vim-surround): surround.vim
 * [vim-trailing-whitespace](https://github.com/bronson/vim-trailing-whitespace): Highlights trailing whitespace in red and provides
+* [vim-vitamins](https://github.com/marlboromoo/vim-vitamins): Vitamins color scheme by hcalves.
 * [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [vundle](https://github.com/gmarik/vundle): Vundle, the plug-in manager for Vim
 * [Wombat](https://github.com/vim-scripts/Wombat): Dark gray color scheme sharing some similarities with Desert

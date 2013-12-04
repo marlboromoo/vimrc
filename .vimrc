@@ -26,7 +26,7 @@ set noerrorbells
 set novisualbell
 set ruler
 "set gfn=terminus\ Regular\ 11
-set gfn=Terminess\ Powerline\ 11
+set gfn=Terminess\ Powerline
 syntax on
 set pastetoggle=<F3>
 let mapleader = ","

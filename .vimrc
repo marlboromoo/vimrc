@@ -136,6 +136,9 @@ Bundle 'marlboromoo/mustang-vim'
 Bundle 'zeis/vim-kolor'
 Bundle 'nanotech/jellybeans.vim'
 
+" >>> bundles - doc
+Bundle 'dahu/LearnVim'
+
 " >>> other settings
 filetype plugin indent on " required!
 

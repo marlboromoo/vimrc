@@ -123,6 +123,7 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'nsf/gocode', {'rtp': 'vim/'}
 Bundle 'dgryski/vim-godef'
 "Bundle 'edkolev/tmuxline.vim'
+Bundle 'benmills/vimux'
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'
@@ -283,3 +284,16 @@ au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 "au BufWritePost *.go silent! !ctags -R *.go &
 "au BufWritePost *.py silent! !ctags -R *.py &
 
+"==============================================================================
+" vimux
+"==============================================================================
+ " Prompt for a command to run
+ map <Leader>tp :VimuxPromptCommand<CR>
+ " Run last command executed by VimuxRunCommand
+ map <Leader>tl :VimuxRunLastCommand<CR>
+ " Inspect runner pane
+ map <Leader>ti :VimuxInspectRunner<CR>
+ " Close vim tmux runner opened by VimuxRunCommand
+ map <Leader>tq :VimuxCloseRunner<CR>
+ " Interrupt any command running in the runner pane
+ map <Leader>tx :VimuxInterruptRunner<CR>

@@ -109,6 +109,13 @@ Please refer to the document listed below.
  - `N` `<c-j>/<c-k>` : navigate the result list (in CtrlP window.)
  - `N` `<c-f>/<c-b>` : cycle between modes (in CtrlP window.)
 
+### vimux
+ - `N` `<leader>tp` : Prompt for a command to run
+ - `N` `<leader>tl` : Run last command executed by VimuxRunCommand
+ - `N` `<leader>ti` : Inspect runner pane
+ - `N` `<leader>tq` : Close vim tmux runner opened by VimuxRunCommand
+ - `N` `<leader>tx` : Interrupt any command running in the runner pane
+
 ### MISC
  - `N` `<S-k>` : show python documentation
  - `N` `<C-p>` : toggle **ctrlp.vim** window
@@ -126,6 +133,8 @@ Please refer to the document listed below.
 * [indentLine](https://github.com/Yggdroot/indentLine): A vim plugin to display the indention levels with thin vertical lines
 * [indentpython.vim](https://github.com/vim-scripts/indentpython.vim): An alternative indentation script for python
 * [jedi-vim](https://github.com/davidhalter/jedi-vim): Using the jedi autocompletion library for VIM.
+* [jellybeans.vim](https://github.com/nanotech/jellybeans.vim): A colorful, dark color scheme for Vim.
+* [LearnVim](https://github.com/dahu/LearnVim): A Suggested Path for Learning Vim
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim
 * [mustang-vim](https://github.com/marlboromoo/mustang-vim): A slightly modified version of the original mustang-colorscheme for vim by hcalves.
 * [nerdtree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim.
@@ -149,6 +158,7 @@ Please refer to the document listed below.
 * [vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim
 * [vim-surround](https://github.com/tpope/vim-surround): surround.vim
 * [vim-trailing-whitespace](https://github.com/bronson/vim-trailing-whitespace): Highlights trailing whitespace in red and provides
+* [vimux](https://github.com/benmills/vimux): vim plugin to interact with tmux
 * [vim-vitamins](https://github.com/marlboromoo/vim-vitamins): Vitamins color scheme by hcalves.
 * [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [vundle](https://github.com/gmarik/vundle): Vundle, the plug-in manager for Vim

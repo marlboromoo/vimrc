@@ -109,6 +109,13 @@ Please refer to the document listed below.
  - `N` `<c-j>/<c-k>` : navigate the result list (in CtrlP window.)
  - `N` `<c-f>/<c-b>` : cycle between modes (in CtrlP window.)
 
+### vimux
+ - `N` `<leader>tp` : Prompt for a command to run
+ - `N` `<leader>tl` : Run last command executed by VimuxRunCommand
+ - `N` `<leader>ti` : Inspect runner pane
+ - `N` `<leader>tq` : Close vim tmux runner opened by VimuxRunCommand
+ - `N` `<leader>tx` : Interrupt any command running in the runner pane
+
 ### MISC
  - `N` `<S-k>` : show python documentation
  - `N` `<C-p>` : toggle **ctrlp.vim** window

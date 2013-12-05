@@ -26,6 +26,7 @@
 * [vim-golang](https://github.com/jnwhiteh/vim-golang): Github mirror of Go vimscripts, synced with main repository
 * [gocode](https://github.com/nsf/gocode): An autocompletion daemon for the Go programming language
 * [vim-godef](https://github.com/dgryski/vim-godef): vim plugin providing godef support
+* [vimux](https://github.com/benmills/vimux): vim plugin to interact with tmux
 * [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
 * [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim
@@ -34,3 +35,5 @@
 * [vim-vitamins](https://github.com/marlboromoo/vim-vitamins): Vitamins color scheme by hcalves.
 * [mustang-vim](https://github.com/marlboromoo/mustang-vim): A slightly modified version of the original mustang-colorscheme for vim by hcalves.
 * [vim-kolor](https://github.com/zeis/vim-kolor): Vim color scheme.
+* [jellybeans.vim](https://github.com/nanotech/jellybeans.vim): A colorful, dark color scheme for Vim.
+* [LearnVim](https://github.com/dahu/LearnVim): A Suggested Path for Learning Vim

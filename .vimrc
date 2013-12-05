@@ -122,6 +122,7 @@ Bundle 'marlboromoo/vim-copycat'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'nsf/gocode', {'rtp': 'vim/'}
 Bundle 'dgryski/vim-godef'
+"Bundle 'edkolev/tmuxline.vim'
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'

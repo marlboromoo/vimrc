@@ -59,11 +59,25 @@ sudo apt-get update
 sudo apt-get install vim vim-gnome \
 build-essential cmake python-dev python-pip python-setuptools xclip
 sudo easy_install copycat copycat-clipboard
+
 #. golang
 bash &lt; &lt;(curl -s https://raw.github.com/moovweb/gvm/master/binscripts/gvm-installer)
 source "$HOME/.gvm/scripts/gvm"
 gvm install go1.1.2
 gvm use go1.1.2 --default
+
+#. Patched font, see: 
+#. https://powerline.readthedocs.org/en/latest/installation/linux.html
+#. http://askubuntu.com/questions/6710/how-can-i-use-bitmap-fonts-in-gvim
+cd /tmp/
+git clone https://github.com/Lokaltog/powerline-fonts
+mkdir -p ~/.fonts/
+cp -ra ./powerline-fonts/Terminus/ ~/.fonts/
+cd /etc/fonts/conf.d
+sudo rm 70-no-bitmaps.conf
+sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
+fc-cache -f -v ~/.fonts/
+
 </code></pre>
 
 <h3>
@@ -173,11 +187,25 @@ go get -u code.google.com/p/rog-go/exp/cmd/godef
 
 <ul>
 <li>
-<code>N</code>  : invoke CtrlP</li>
+<code>N</code> <code>&lt;c-p&gt;</code> : invoke CtrlP</li>
 <li>
-<code>N</code> / : navigate the result list (in CtrlP window.)</li>
+<code>N</code> <code>&lt;c-j&gt;/&lt;c-k&gt;</code> : navigate the result list (in CtrlP window.)</li>
 <li>
-<code>N</code> / : cycle between modes (in CtrlP window.)</li>
+<code>N</code> <code>&lt;c-f&gt;/&lt;c-b&gt;</code> : cycle between modes (in CtrlP window.)</li>
+</ul><h3>
+<a name="vimux" class="anchor" href="#vimux"><span class="octicon octicon-link"></span></a>vimux</h3>
+
+<ul>
+<li>
+<code>N</code> <code>&lt;leader&gt;tp</code> : Prompt for a command to run</li>
+<li>
+<code>N</code> <code>&lt;leader&gt;tl</code> : Run last command executed by VimuxRunCommand</li>
+<li>
+<code>N</code> <code>&lt;leader&gt;ti</code> : Inspect runner pane</li>
+<li>
+<code>N</code> <code>&lt;leader&gt;tq</code> : Close vim tmux runner opened by VimuxRunCommand</li>
+<li>
+<code>N</code> <code>&lt;leader&gt;tx</code> : Interrupt any command running in the runner pane</li>
 </ul><h3>
 <a name="misc" class="anchor" href="#misc"><span class="octicon octicon-link"></span></a>MISC</h3>
 
@@ -215,7 +243,13 @@ go get -u code.google.com/p/rog-go/exp/cmd/godef
 <li>
 <a href="https://github.com/davidhalter/jedi-vim">jedi-vim</a>: Using the jedi autocompletion library for VIM.</li>
 <li>
+<a href="https://github.com/nanotech/jellybeans.vim">jellybeans.vim</a>: A colorful, dark color scheme for Vim.</li>
+<li>
+<a href="https://github.com/dahu/LearnVim">LearnVim</a>: A Suggested Path for Learning Vim</li>
+<li>
 <a href="https://github.com/tomasr/molokai">molokai</a>: Molokai color scheme for Vim</li>
+<li>
+<a href="https://github.com/marlboromoo/mustang-vim">mustang-vim</a>: A slightly modified version of the original mustang-colorscheme for vim by hcalves.</li>
 <li>
 <a href="https://github.com/scrooloose/nerdtree">nerdtree</a>: A tree explorer plugin for vim.</li>
 <li>
@@ -243,7 +277,11 @@ go get -u code.google.com/p/rog-go/exp/cmd/godef
 <li>
 <a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a>: fugitive.vim</li>
 <li>
+<a href="https://github.com/dgryski/vim-godef">vim-godef</a>: vim plugin providing godef support</li>
+<li>
 <a href="https://github.com/jnwhiteh/vim-golang">vim-golang</a>: Github mirror of Go vimscripts, synced with main repository</li>
+<li>
+<a href="https://github.com/zeis/vim-kolor">vim-kolor</a>: Vim color scheme.</li>
 <li>
 <a href="https://github.com/terryma/vim-multiple-cursors">vim-multiple-cursors</a>: True Sublime Text style multiple selections for Vim</li>
 <li>
@@ -254,6 +292,10 @@ go get -u code.google.com/p/rog-go/exp/cmd/godef
 <a href="https://github.com/tpope/vim-surround">vim-surround</a>: surround.vim</li>
 <li>
 <a href="https://github.com/bronson/vim-trailing-whitespace">vim-trailing-whitespace</a>: Highlights trailing whitespace in red and provides</li>
+<li>
+<a href="https://github.com/benmills/vimux">vimux</a>: vim plugin to interact with tmux</li>
+<li>
+<a href="https://github.com/marlboromoo/vim-vitamins">vim-vitamins</a>: Vitamins color scheme by hcalves.</li>
 <li>
 <a href="https://github.com/molok/vim-vombato-colorscheme">vim-vombato-colorscheme</a>: Colorscheme forked from Wombat, much more complete than the original</li>
 <li>

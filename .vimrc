@@ -235,14 +235,13 @@ set laststatus=2
 "==============================================================================
 " jedi
 "==============================================================================
-let g:jedi#auto_vim_configuration = 0
-let g:jedi#popup_on_dot = 0
-"let g:jedi#popup_select_first = 0
+let g:jedi#completions_enabled = 0
 
 "==============================================================================
 " YouCompleteMe
 "==============================================================================
 let g:ycm_key_list_select_completion = ['<Down>']
+let g:ycm_key_list_previous_completion = ['<Up>']
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_cache_omnifunc = 1
 

@@ -124,6 +124,7 @@ Bundle 'nsf/gocode', {'rtp': 'vim/'}
 Bundle 'dgryski/vim-godef'
 "Bundle 'edkolev/tmuxline.vim'
 Bundle 'benmills/vimux'
+Bundle 'fs111/pydoc.vim'
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'

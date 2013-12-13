@@ -138,6 +138,7 @@ Bundle 'marlboromoo/vim-vitamins'
 Bundle 'marlboromoo/mustang-vim'
 Bundle 'zeis/vim-kolor'
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 
 " >>> bundles - doc
 Bundle 'dahu/LearnVim'

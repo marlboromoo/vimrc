@@ -75,6 +75,9 @@ nnoremap <S-l> gt
 " >>> Avoid the escape key
 imap ii <Esc>
 
+" >>> Shortcut to close the window, e.g., help window.
+nmap q :q<CR>
+
 "==============================================================================
 " vundle: the plug-in manager for Vim, https://github.com/gmarik/vundle
 "

@@ -128,6 +128,7 @@ Bundle 'dgryski/vim-godef'
 "Bundle 'edkolev/tmuxline.vim'
 Bundle 'benmills/vimux'
 Bundle 'fs111/pydoc.vim'
+Bundle 'Keithbsmiley/investigate.vim'
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'

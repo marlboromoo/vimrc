@@ -116,6 +116,9 @@ Please refer to the document listed below.
  - `N` `<leader>tq` : Close vim tmux runner opened by VimuxRunCommand
  - `N` `<leader>tx` : Interrupt any command running in the runner pane
 
+### investigate.vim
+ - `N` `gK` : Open document in the browser
+
 ### MISC
  - `N` `<S-k>` : show python documentation
  - `N` `<C-p>` : toggle **ctrlp.vim** window
@@ -132,17 +135,20 @@ Please refer to the document listed below.
 * [gocode](https://github.com/nsf/gocode): An autocompletion daemon for the Go programming language
 * [indentLine](https://github.com/Yggdroot/indentLine): A vim plugin to display the indention levels with thin vertical lines
 * [indentpython.vim](https://github.com/vim-scripts/indentpython.vim): An alternative indentation script for python
+* [investigate.vim](https://github.com/Keithbsmiley/investigate.vim): A Vim plugin for looking up documentation
 * [jedi-vim](https://github.com/davidhalter/jedi-vim): Using the jedi autocompletion library for VIM.
 * [jellybeans.vim](https://github.com/nanotech/jellybeans.vim): A colorful, dark color scheme for Vim.
 * [LearnVim](https://github.com/dahu/LearnVim): A Suggested Path for Learning Vim
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim
 * [mustang-vim](https://github.com/marlboromoo/mustang-vim): A slightly modified version of the original mustang-colorscheme for vim by hcalves.
 * [nerdtree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim.
+* [pydoc.vim](https://github.com/fs111/pydoc.vim): pydoc integration for the best text editor on earth
 * [rainbow_parentheses.vim](https://github.com/kien/rainbow_parentheses.vim): Better Rainbow Parentheses
 * [SimpylFold](https://github.com/tmhedberg/SimpylFold): No-BS Python code folding for Vim
 * [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
 * [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by class etc.
 * [TagmaTasks](https://github.com/vim-scripts/TagmaTasks): IDE like Task List for Vim buffers.
+* [tomorrow-theme](https://github.com/chriskempson/tomorrow-theme): Tomorrow Theme the precursor to Base16 Theme
 * [Toy-Chest-Theme](https://github.com/marlboromoo/Toy-Chest-Theme): A \Flat-UI\ color scheme for programmers who like to play.
 * [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
 * [vim-airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air

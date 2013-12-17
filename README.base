@@ -116,6 +116,9 @@ Please refer to the document listed below.
  - `N` `<leader>tq` : Close vim tmux runner opened by VimuxRunCommand
  - `N` `<leader>tx` : Interrupt any command running in the runner pane
 
+### investigate.vim
+ - `N` `gK` : Open document in the browser
+
 ### MISC
  - `N` `<S-k>` : show python documentation
  - `N` `<C-p>` : toggle **ctrlp.vim** window

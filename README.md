@@ -17,7 +17,7 @@ Personal settings/plugins for vim/gvim.
 ## Installation
 
 ### Dependency
-```
+```sh
 sudo add-apt-repository ppa:fcwu-tw/ppa #. vim 7.4 repository for YCM
 sudo apt-get update
 sudo apt-get install vim vim-gnome \
@@ -51,7 +51,7 @@ http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 ```
 
 ### With Vundle
-```
+```sh
 cd ~/
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
 bash ./vimrc/init.sh

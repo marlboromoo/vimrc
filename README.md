@@ -22,7 +22,6 @@ sudo add-apt-repository ppa:fcwu-tw/ppa #. vim 7.4 repository for YCM
 sudo apt-get update
 sudo apt-get install vim vim-gnome \
 build-essential cmake python-dev python-pip python-setuptools xclip
-sudo easy_install copycat copycat-clipboard
 
 #. golang
 bash < <(curl -s https://raw.github.com/moovweb/gvm/master/binscripts/gvm-installer)
@@ -41,6 +40,13 @@ cd /etc/fonts/conf.d
 sudo rm 70-no-bitmaps.conf
 sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
 fc-cache -f -v ~/.fonts/
+
+#. copycat
+sudo easy_install copycat copycat-clipboard
+
+#. syntax checkers for syntastic
+sudo easy_install -U pyflakes \
+http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 
 ```
 

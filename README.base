@@ -47,6 +47,7 @@ sudo easy_install copycat copycat-clipboard
 #. syntax checkers for syntastic
 sudo easy_install -U pyflakes \
 http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
+sudo apt-get install tidy
 
 ```
 

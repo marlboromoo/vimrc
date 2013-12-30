@@ -115,7 +115,6 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/DrawIt'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'javacomplete'
 Bundle 'Valloric/YouCompleteMe'
 "Bundle 'mhinz/vim-startify'
 Bundle 'bronson/vim-trailing-whitespace'
@@ -158,8 +157,8 @@ let g:vundle_default_git_proto = 'http'
 "==============================================================================
 " vim color scheme settings, set after bundle load
 "==============================================================================
-colorscheme jellybeans
 highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929
+colorscheme jellybeans
 
 "==============================================================================
 " tagbar
@@ -216,6 +215,7 @@ let g:syntastic_python_checkers=['pyflakes']
 "let g:syntastic_python_checkers=['pylint']
 let g:syntastic_javascript_checkers = ['gjslint']
 let g:syntastic_html_checkers = ['tidy']
+let g:syntastic_java_checkers = []
 
 "==============================================================================
 " vim-powerline
@@ -223,22 +223,16 @@ let g:syntastic_html_checkers = ['tidy']
 set laststatus=2
 
 "==============================================================================
-" javacomplete
-"==============================================================================
-"if has("autocmd")
-"  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-"  autocmd FileType java inoremap <buffer> . .<C-X><C-O><C-P>
-"endif
-
-"==============================================================================
 " eclim
 "==============================================================================
-"let g:EclimCompletionMethod = 'omnifunc'
-"if has("autocmd")
-"  autocmd Filetype java nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
-"  autocmd Filetype java nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x declarations<cr>
-"  autocmd Filetype java nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
-"endif
+let g:EclimCompletionMethod = 'omnifunc'
+au Filetype java nnoremap <silent> <buffer> <S-k> :JavaDocSearch -x declarations<cr>
+
+func! JavaFormatter()
+    % JavaFormat
+    set ft=java
+endfunc
+au FileType java au BufWritePre <buffer> :call JavaFormatter()
 
 "==============================================================================
 " jedi
@@ -266,6 +260,7 @@ let g:ycm_cache_omnifunc = 1
 "let g:airline#extensions#syntastic#enabled = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#eclim#enabled = 1
 
 "==============================================================================
 " vim-flavored-markdown

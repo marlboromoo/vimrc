@@ -136,7 +136,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'molok/vim-vombato-colorscheme'
 Bundle 'tomasr/molokai'
 Bundle 'Wombat'
-Bundle 'marlboromoo/Toy-Chest-Theme', {'rtp': 'Vim/'}
+Bundle 'marlboromoo/Toy-Chest-Theme', {'rtp': 'themes/Vim/'}
 Bundle 'marlboromoo/vim-vitamins'
 Bundle 'marlboromoo/mustang-vim'
 Bundle 'zeis/vim-kolor'
@@ -232,7 +232,7 @@ func! JavaFormatter()
     % JavaFormat
     set ft=java
 endfunc
-au FileType java au BufWritePre <buffer> :call JavaFormatter()
+"au FileType java au BufWritePre <buffer> :call JavaFormatter()
 
 "==============================================================================
 " jedi

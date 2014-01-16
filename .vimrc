@@ -209,8 +209,11 @@ map <leader>tr :NERDTreeTabsToggle<cr>
 "==============================================================================
 " syntastic
 "==============================================================================
-"map <S-s> :SyntasticCheck<CR>
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 2
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_auto_jump = 1
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_python_checkers=['pyflakes']
 "let g:syntastic_python_checkers=['pylint']
 let g:syntastic_javascript_checkers = ['gjslint']
@@ -257,7 +260,7 @@ let g:ycm_cache_omnifunc = 1
 "==============================================================================
 " airline
 "==============================================================================
-"let g:airline#extensions#syntastic#enabled = 0
+"let g:airline#extensions#syntastic#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#eclim#enabled = 1

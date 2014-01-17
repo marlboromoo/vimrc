@@ -268,7 +268,8 @@ let g:airline#extensions#eclim#enabled = 1
 "==============================================================================
 " vim-flavored-markdown
 "==============================================================================
-au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown spell
+au FileType gitcommit setlocal spell
 
 "==============================================================================
 " vim-golang

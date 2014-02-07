@@ -128,6 +128,7 @@ Bundle 'benmills/vimux'
 Bundle 'fs111/pydoc.vim'
 Bundle 'Keithbsmiley/investigate.vim'
 Bundle 'tpope/vim-vinegar'
+Bundle 'sk1418/blockit'
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'

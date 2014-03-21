@@ -129,9 +129,11 @@ Bundle 'fs111/pydoc.vim'
 Bundle 'Keithbsmiley/investigate.vim'
 Bundle 'tpope/vim-vinegar'
 Bundle 'sk1418/blockit'
+Bundle 'jcfaria/Vim-R-plugin'
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
 
 " >>> bundles - color scheme
 Bundle 'molok/vim-vombato-colorscheme'

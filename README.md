@@ -137,6 +137,7 @@ Please refer to the document listed below.
 
 ## Plugins
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs): Vim plugin, insert or delete brackets, parens, quotes in pair
+* [blockit](https://github.com/sk1418/blockit): a vim plugin to wrap lines in a block
 * [ctrlp.vim](https://github.com/kien/ctrlp.vim): Fuzzy file, buffer, mru, tag, etc finder.
 * [DrawIt](https://github.com/vim-scripts/DrawIt): Ascii drawing plugin
 * [gocode](https://github.com/nsf/gocode): An autocompletion daemon for the Go programming language
@@ -153,11 +154,11 @@ Please refer to the document listed below.
 * [rainbow_parentheses.vim](https://github.com/kien/rainbow_parentheses.vim): Better Rainbow Parentheses
 * [SimpylFold](https://github.com/tmhedberg/SimpylFold): No-BS Python code folding for Vim
 * [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
-* [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by class etc.
+* [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by scope
 * [TagmaTasks](https://github.com/vim-scripts/TagmaTasks): IDE like Task List for Vim buffers.
 * [tomorrow-theme](https://github.com/chriskempson/tomorrow-theme): Tomorrow Theme the precursor to Base16 Theme
-* [Toy-Chest-Theme](https://github.com/marlboromoo/Toy-Chest-Theme): A \Flat-UI\ color scheme for programmers who like to play.
-* [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
+* [Toy-Chest-Theme](https://github.com/marlboromoo/Toy-Chest-Theme): A color scheme that makes coding look as fun as it really is.
+* [ultisnips](https://github.com/SirVer/ultisnips): UltiSnips - The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
 * [vim-airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
 * [vim-copycat](https://github.com/marlboromoo/vim-copycat): vim-copycat provides much simpler way to share clipboard between terminal and system
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
@@ -169,11 +170,14 @@ Please refer to the document listed below.
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim
 * [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs): NERDTree and tabs together in Vim, painlessly
 * [vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim
+* [Vim-R-plugin](https://github.com/jcfaria/Vim-R-plugin): Plugin to work with R (forked for development only)
+* [vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets (Previously snipmate-snippets)
 * [vim-surround](https://github.com/tpope/vim-surround): surround.vim
 * [vim-trailing-whitespace](https://github.com/bronson/vim-trailing-whitespace): Highlights trailing whitespace in red and provides
 * [vimux](https://github.com/benmills/vimux): vim plugin to interact with tmux
+* [vim-vinegar](https://github.com/tpope/vim-vinegar): vinegar.vim
 * [vim-vitamins](https://github.com/marlboromoo/vim-vitamins): Vitamins color scheme by hcalves.
 * [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
-* [vundle](https://github.com/gmarik/vundle): Vundle, the plug-in manager for Vim
+* [vundle](https://github.com/gmarik/vundle): 
 * [Wombat](https://github.com/vim-scripts/Wombat): Dark gray color scheme sharing some similarities with Desert
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe): A code-completion engine for Vim

@@ -1,7 +1,7 @@
 ## Plugins
-* [vundle](https://github.com/gmarik/vundle): Vundle, the plug-in manager for Vim
+* [vundle](https://github.com/gmarik/vundle): 
 * [indentLine](https://github.com/Yggdroot/indentLine): A vim plugin to display the indention levels with thin vertical lines
-* [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by class etc.
+* [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by scope
 * [nerdtree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim.
 * [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
 * [vim-airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
@@ -29,11 +29,15 @@
 * [vimux](https://github.com/benmills/vimux): vim plugin to interact with tmux
 * [pydoc.vim](https://github.com/fs111/pydoc.vim): pydoc integration for the best text editor on earth
 * [investigate.vim](https://github.com/Keithbsmiley/investigate.vim): A Vim plugin for looking up documentation
-* [ultisnips](https://github.com/SirVer/ultisnips): Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
+* [vim-vinegar](https://github.com/tpope/vim-vinegar): vinegar.vim
+* [blockit](https://github.com/sk1418/blockit): a vim plugin to wrap lines in a block
+* [Vim-R-plugin](https://github.com/jcfaria/Vim-R-plugin): Plugin to work with R (forked for development only)
+* [ultisnips](https://github.com/SirVer/ultisnips): UltiSnips - The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
+* [vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets (Previously snipmate-snippets)
 * [vim-vombato-colorscheme](https://github.com/molok/vim-vombato-colorscheme): Colorscheme forked from Wombat, much more complete than the original
 * [molokai](https://github.com/tomasr/molokai): Molokai color scheme for Vim
 * [Wombat](https://github.com/vim-scripts/Wombat): Dark gray color scheme sharing some similarities with Desert
-* [Toy-Chest-Theme](https://github.com/marlboromoo/Toy-Chest-Theme): A \Flat-UI\ color scheme for programmers who like to play.
+* [Toy-Chest-Theme](https://github.com/marlboromoo/Toy-Chest-Theme): A color scheme that makes coding look as fun as it really is.
 * [vim-vitamins](https://github.com/marlboromoo/vim-vitamins): Vitamins color scheme by hcalves.
 * [mustang-vim](https://github.com/marlboromoo/mustang-vim): A slightly modified version of the original mustang-colorscheme for vim by hcalves.
 * [vim-kolor](https://github.com/zeis/vim-kolor): Vim color scheme.

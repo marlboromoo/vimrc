@@ -42,7 +42,7 @@ sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
 fc-cache -f -v ~/.fonts/
 
 #. copycat
-sudo easy_install copycat copycat-clipboard
+sudo easy_install copycat-clipboard
 
 #. syntax checkers for syntastic
 sudo easy_install -U pyflakes \
@@ -55,8 +55,6 @@ sudo apt-get install tidy
 ```sh
 cd ~/
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
-bash ./vimrc/init.sh
-vim +BundleInstall +qall
 #. Compiling YCM with semantic support for C-family languages:
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer

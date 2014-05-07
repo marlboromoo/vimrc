@@ -29,7 +29,7 @@ source "$HOME/.gvm/scripts/gvm"
 gvm install go1.1.2
 gvm use go1.1.2 --default
 
-#. Patched font, see: 
+#. Patched font, see:
 #. https://powerline.readthedocs.org/en/latest/installation/linux.html
 #. http://askubuntu.com/questions/6710/how-can-i-use-bitmap-fonts-in-gvim
 cd /tmp/
@@ -55,6 +55,8 @@ sudo apt-get install tidy
 ```sh
 cd ~/
 git clone http://marlboromoo@github.com/marlboromoo/vimrc.git
+./vimrc/init.sh
+vim +BundleInstall +qall
 #. Compiling YCM with semantic support for C-family languages:
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer

@@ -1,6 +1,6 @@
 #!/bin/bash
 VUNDLE_PATH=~/.vim/bundle/vundle
-VUNDLE_REPO=http://github.com/gmarik/vundle.git
+VUNDLE_REPO='https://github.com/gmarik/vundle.git'
 FILES='.vim .vimrc .gvimrc'
 CWD=$(cd $(dirname $0) && pwd)
 

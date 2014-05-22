@@ -73,7 +73,7 @@ nnoremap <S-h> gT
 nnoremap <S-l> gt
 
 " >>> Avoid the escape key
-imap ii <Esc>
+"imap ii <Esc>
 
 " >>> Shortcut to close the window, e.g., help window.
 nmap q :q<CR>
@@ -120,16 +120,16 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'TagmaTasks'
 Bundle 'marlboromoo/vim-copycat'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'nsf/gocode', {'rtp': 'vim/'}
-Bundle 'dgryski/vim-godef'
+"Bundle 'jnwhiteh/vim-golang'
+"Bundle 'nsf/gocode', {'rtp': 'vim/'}
+"Bundle 'dgryski/vim-godef'
 "Bundle 'edkolev/tmuxline.vim'
 Bundle 'benmills/vimux'
 Bundle 'fs111/pydoc.vim'
 Bundle 'Keithbsmiley/investigate.vim'
-Bundle 'tpope/vim-vinegar'
-Bundle 'sk1418/blockit'
-Bundle 'jcfaria/Vim-R-plugin'
+"Bundle 'tpope/vim-vinegar'
+"Bundle 'sk1418/blockit'
+"Bundle 'jcfaria/Vim-R-plugin'
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'

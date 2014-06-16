@@ -130,6 +130,7 @@ Bundle 'Keithbsmiley/investigate.vim'
 "Bundle 'tpope/vim-vinegar'
 "Bundle 'sk1418/blockit'
 "Bundle 'jcfaria/Vim-R-plugin'
+Bundle 'sheerun/vim-polyglot'
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'

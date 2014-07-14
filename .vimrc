@@ -25,8 +25,6 @@ set hlsearch
 set noerrorbells
 set novisualbell
 set ruler
-"set gfn=terminus\ Regular\ 11
-set gfn=Terminess\ Powerline
 syntax on
 set pastetoggle=<F3>
 let mapleader = ","
@@ -131,6 +129,7 @@ Bundle 'Keithbsmiley/investigate.vim'
 "Bundle 'sk1418/blockit'
 "Bundle 'jcfaria/Vim-R-plugin'
 Bundle 'sheerun/vim-polyglot'
+Bundle 'ConradIrwin/vim-bracketed-paste'
 
 " >>> bundles - snippets
 Bundle 'SirVer/ultisnips'
@@ -220,7 +219,7 @@ let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_python_checkers=['pyflakes']
 "let g:syntastic_python_checkers=['pylint']
-let g:syntastic_javascript_checkers = ['gjslint']
+let g:syntastic_javascript_checkers = []
 let g:syntastic_html_checkers = ['tidy']
 let g:syntastic_java_checkers = []
 

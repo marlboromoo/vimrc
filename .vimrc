@@ -32,6 +32,9 @@ let mapleader = ","
 "==============================================================================
 " vim other settings
 "==============================================================================
+" >>> Maps "K" to open vim help instead of linux man
+autocmd FileType vim,vimrc setlocal keywordprg=:help
+
 " >>> copy/paste, ref:http://superuser.com/questions/214715/map-shift-insert-in-vim
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>

@@ -1,0 +1,124 @@
+"
+"
+"    ___  ___           _ _                    ___  ___
+"    |  \/  |          | | |                   |  \/  |
+"    | .  . | __ _ _ __| | |__   ___  _ __ ___ | .  . | ___   ___
+"    | |\/| |/ _` | '__| | '_ \ / _ \| '__/ _ \| |\/| |/ _ \ / _ \
+"    | |  | | (_| | |  | | |_) | (_) | | | (_) | |  | | (_) | (_) |
+"    \_|  |_/\__,_|_|  |_|_.__/ \___/|_|  \___/\_|  |_/\___/ \___/ 's vimrc.win
+"
+"
+"==============================================================================
+" vim basic settings
+"==============================================================================
+set t_Co=256
+let $LANG="zh_TW.UTF-8"
+set langmenu=zh_TW.UTF-8
+set fileencodings=ucs-bom,utf-8,cp936,big5
+set enc=utf-8
+set tenc=utf-8
+set nowb
+set backspace=start,indent,eol
+set nu!
+set autoindent
+set smartindent
+set wrap
+set hlsearch
+set noerrorbells
+set novisualbell
+set ruler
+syntax on
+set pastetoggle=<F3>
+let mapleader = ","
+ 
+"==============================================================================
+" vim other settings
+"==============================================================================
+" >>> Maps "K" to open vim help instead of linux man
+autocmd FileType vim,vimrc setlocal keywordprg=:help
+ 
+" >>> copy/paste, ref:http://superuser.com/questions/214715/map-shift-insert-in-vim
+map <S-Insert> <MiddleMouse>
+map! <S-Insert> <MiddleMouse>
+ 
+" >>> column line
+set colorcolumn=80
+highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929
+ 
+" >>> complete
+"set completeopt=menu,preview
+set completeopt=menu,longest,menuone
+ 
+" >>> list
+nmap <leader>l :set list!<CR>
+set listchars=tab:▸\ ,eol:¬
+ 
+" >>> folding
+set nofoldenable
+ 
+" >>> python pep8
+set shiftwidth=4
+set softtabstop=4
+set tabstop=8
+"set textwidth=79
+set smarttab
+set expandtab
+set fileformat=unix
+ 
+" >>> Easier split navigation - Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+ 
+" >>> Easier tab navigation - Use shift-[hl] to select the tab!
+nnoremap <S-h> gT
+nnoremap <S-l> gt
+ 
+"==============================================================================
+" vundle: the plug-in manager for Vim, https://github.com/gmarik/vundle
+"
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" 
+" NOTE: comments after Bundle command are not allowed..
+"==============================================================================
+" >>> basic settings
+set nocompatible
+filetype off " required!
+set rtp+=~/vimfiles/bundle/Vundle.vim/
+let path='~/vimfiles/bundle'
+call vundle#rc(path)
+ 
+" >>> bundles
+Bundle 'gmarik/vundle'
+ 
+" >>> bundles - color scheme
+Bundle 'molok/vim-vombato-colorscheme'
+Bundle 'tomasr/molokai'
+Bundle 'Wombat'
+Bundle 'marlboromoo/Toy-Chest-Theme', {'rtp': 'themes/Vim/'}
+Bundle 'marlboromoo/vim-vitamins'
+Bundle 'marlboromoo/mustang-vim'
+Bundle 'zeis/vim-kolor'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+ 
+" >>> bundles - doc
+Bundle 'dahu/LearnVim'
+ 
+" >>> other settings
+filetype plugin indent on " required!
+ 
+"==============================================================================
+" Vundle
+"==============================================================================
+let g:vundle_default_git_proto = 'http'
+ 
+"==============================================================================
+" vim color scheme settings, set after bundle load
+"==============================================================================
+highlight ColorColumn ctermbg=red ctermfg=white guibg=#592929
+colorscheme jellybeans
